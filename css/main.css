@@ -16,7 +16,7 @@
 }
 
 body {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 nav {
@@ -36,6 +36,10 @@ section {
 a {
     text-decoration: none;
     color: var(--primary-color)
+}
+
+.nav-links a {
+    transition: 100ms border linear;
 }
 
 .nav-links a:hover {
@@ -87,7 +91,7 @@ main {
     cursor: pointer;
     border: 2px solid var(--primary-color);
     transition: 100ms transform ease-in;
-    box-shadow: 3px 3px 5px 2px #ebebeb
+    box-shadow: 3px 3px 5px 2px #ebebeb;
 }
 
 .getting-started-btn {
