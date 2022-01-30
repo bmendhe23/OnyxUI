@@ -1,0 +1,50 @@
+.doc-wrapper {
+    display: grid;
+    color: var(--primary-color);
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "sidebar main";
+    column-gap: 50px;
+}
+
+hr {
+    border: 0.2px solid rgb(236, 236, 236);
+}
+
+h3, ul {
+    margin-left: 15px;
+}
+
+ul {
+    list-style: none;
+    font-weight: 300;
+}
+
+.sidebar {
+    width: 200px;
+    line-height: 3;
+    grid-area: sidebar;
+}
+
+.doc-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+.content-title {
+    font-size: 1.8rem;
+}
+
+.component-description {
+    margin-bottom: 25px;
+    text-align: justify;
+}
