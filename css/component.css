@@ -66,6 +66,10 @@ h2 {
     text-align: justify;
 }
 
+.note-highlight {
+    color: rgb(13, 166, 226)
+}
+
 .code-visual-container {
     display: flex;
     flex-grow: 1;
@@ -74,6 +78,14 @@ h2 {
     background-color: antiquewhite;
     height: 125px;
     border-radius: 5px;
+}
+
+.text-badge-container {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .hljs {
