@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 30px;
+    font-size: 1.6rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-links a {
+    font-size: 1.2rem;
+    transition: 100ms border linear;
+}
+
+.nav-links a:hover {
+    border-bottom: 3px solid var(--primary-brand-color);
+}
+
+.brand-logo {
+    width: 48px;
+    height: 48px;
+    max-width: 100%;
+    margin-right: 12px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Avatar</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="avatar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="#">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="cmp-items">Alert</a></li>
+                    <li><a href="/avatar.html" class="cmp-itmes active">Avatar</a></li>
+                    <li><a href="#" class="cmp-items">Badge</a></li>
+                    <li><a href="#" class="cmp-items">Button</a></li>
+                    <li><a href="#" class="cmp-items">Card</a></li>
+                    <li><a href="#" class="cmp-items">Image</a></li>
+                    <li><a href="#" class="cmp-items">Input</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Avatar</h2>
+            </div>
+            <p class="component-description">Avatars are graphical representation of the user's profile picture usually rounded in shape. It can contain visual identity of users, projects, spaces, etc.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Basic Avatars -->
+                
+                <h4 class="content-title">Basic Avatar</h4>
+                <p class="component-description">These basic avatars can be created by adding the class <strong>'avatar'</strong> to the <strong>img</strong> tag for which you want to make a avatar.</p>
+
+                <div class="code-visual-container">
+                    <img class="avatar" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
+                    <img class="avatar" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar-3">
+                    <img class="avatar" src="/assets/avatar/old man.jpg" alt="avatar-4">
+                    <img class="avatar" src="/assets/avatar/river.jpg" alt="avatar-5">
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'avatar' to use the basic avatar--&gt;
+
+            &lt;img class="avatar" src="/assets/avatar/sparrow.jpg" alt="avatar-1"&gt;
+            &lt;img class="avatar" src="/assets/avatar/person.jpg" alt="avatar-2"&gt;
+            &lt;img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar-3"&gt;
+            &lt;img class="avatar" src="/assets/avatar/old man.jpg" alt="avatar-4"&gt;
+            &lt;img class="avatar" src="/assets/avatar/river.jpg" alt="avatar-5"&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Varied Size Avatars -->
+
+                <h4 class="content-title">Varied Size Avatar</h4>
+                <p class="component-description">These avatars can be used apart from the default option by adding the class <strong>'avatar-{sm|m|l}'</strong> to the <strong>img</strong> tag for which you want to make a avatar.</p>
+
+                <div class="code-visual-container">
+                    <img class="avatar-sm" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
+                    <img class="avatar-md" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <img class="avatar-lg" src="/assets/avatar/sea.jpg" alt="avatar-3">
+                    <img class="avatar-md" src="/assets/avatar/old man.jpg" alt="avatar-4">
+                    <img class="avatar-sm" src="/assets/avatar/river.jpg" alt="avatar-5">
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'avatar-{ sm | md | lg }' to use the varied size avatar--&gt;
+
+            &lt;img class="avatar-sm" src="/assets/avatar/sparrow.jpg" alt="avatar-1"&gt;
+            &lt;img class="avatar-md" src="/assets/avatar/person.jpg" alt="avatar-2"&gt;
+            &lt;img class="avatar-lg" src="/assets/avatar/sea.jpg" alt="avatar-3"&gt;
+            &lt;img class="avatar-md" src="/assets/avatar/old man.jpg" alt="avatar-4"&gt;
+            &lt;img class="avatar-sm" src="/assets/avatar/river.jpg" alt="avatar-5"&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Square Avatars -->
+
+                <h4 class="content-title">Square Avatar</h4>
+                <p class="component-description">Avatars can be made square shaped by adding the class <strong>'square'</strong> to the already existing class <strong>'avatar-{sm|md|lg}'</strong> in the <strong>img</strong> tag for which you want to make a avatar.</p>
+
+                <div class="code-visual-container">
+                    <img class="avatar-sm square" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
+                    <img class="avatar-md square" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <img class="avatar-lg square" src="/assets/avatar/sea.jpg" alt="avatar-3">
+                    <img class="avatar-md square" src="/assets/avatar/old man.jpg" alt="avatar-4">
+                    <img class="avatar-sm square" src="/assets/avatar/river.jpg" alt="avatar-5">
+
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Add class 'square' to use the square shaped avatars--&gt;
+
+            &lt;img class="avatar-sm square" src="/assets/avatar/sparrow.jpg" alt="avatar-1"&gt;
+            &lt;img class="avatar-m square" src="/assets/avatar/person.jpg" alt="avatar-2"&gt;
+            &lt;img class="avatar-l square" src="/assets/avatar/sea.jpg" alt="avatar-3"&gt;
+            &lt;img class="avatar-md square" src="/assets/avatar/old man.jpg" alt="avatar-4"&gt;
+            &lt;img class="avatar-sm square" src="/assets/avatar/river.jpg" alt="avatar-5"&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Initials Avatar -->
+
+                <h4 class="content-title">Initials Avatar</h4>
+                <p class="component-description">Avatars with just initials can be added using the class <strong>'avatar-init'</strong> to the <strong>img</strong> tag for which you want to make a avatar.</p>
+
+                <div class="code-visual-container">
+                    <div class="avatar-init">BM</div>
+                    <div class="avatar-init">SM</div>
+                    <div class="avatar-init">RS</div>
+                    <div class="avatar-init">TP</div>
+                    <div class="avatar-init">PP</div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Add class 'square' to use the square shaped avatars--&gt;
+
+            &lt;div class="avatar-init"&gt;BM&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;SM&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;RS&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;TP&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;PP&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="#"><span class="material-icons">arrow_back</span>Alert</a>
+                <a class="right-nav" href="#">Badge<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
