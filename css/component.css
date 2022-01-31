@@ -28,9 +28,25 @@ ul {
     grid-area: sidebar;
 }
 
+.cmp-items, .get-started-items {
+    transition: 100ms margin ease-in;
+}
+
+.cmp-items:hover, .get-started-items:hover {
+    font-weight: 500;
+    margin: 0 0 0 10px;
+}
+
+.active {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
 .doc-container {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
     grid-area: main;
 }
 
@@ -42,9 +58,36 @@ h2 {
 
 .content-title {
     font-size: 1.8rem;
+    margin: 25px 0;
 }
 
 .component-description {
     margin-bottom: 25px;
     text-align: justify;
+}
+
+.code-visual-container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    height: 125px;
+    border-radius: 5px;
+}
+
+.hljs {
+    border-radius: 5px;
+}
+
+.hljs-comment, .hljs-quote {
+    color: white;
+    font-style: italic;
+}
+
+footer, .left-nav, .right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
