@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyx : Alert</title>
+    <title>Onyx : Avatar</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/component.css">
-    <link rel="stylesheet" href="alert.css">
+    <link rel="stylesheet" href="avatar.css">
 </head>
 <body>
     <header>
@@ -43,10 +43,10 @@
                 <h3 class="components-head"><a href="#">Components</a></h3>
                 <hr>
                 <ul>
-                    <li><a href="alert.html" class="cmp-items active">Alert</a></li>
-                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="#" class="cmp-items">Alert</a></li>
+                    <li><a href="/avatar.html" class="cmp-items active">Avatar</a></li>
                     <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
-                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="#" class="cmp-items">Button</a></li>
                     <li><a href="#" class="cmp-items">Card</a></li>
                     <li><a href="#" class="cmp-items">Image</a></li>
                     <li><a href="#" class="cmp-items">Input</a></li>
@@ -55,218 +55,116 @@
         </aside>
         <main class="doc-container">
             <div class="doc-head">
-                <h2>Alert</h2>
+                <h2>Avatar</h2>
             </div>
-            <p class="component-description">Alert is used to redirect user's attention to an important message without disturbing the normal flow of the webpage and user.</p>
+            <p class="component-description">Avatars are graphical representation of the user's profile picture usually rounded in shape. It can contain visual identity of users, projects, spaces, etc.</p>
             <hr>
             <div class="doc-body">
 
-                <!-- Simple Alerts -->
+                <!-- Basic Avatars -->
                 
-                <h4 class="content-title">Simple Alert</h4>
-                <p class="component-description">Simple alerts can be used my adding class <strong>'alert'</strong> followed by the variant name.</p>
+                <h4 class="content-title">Basic Avatar</h4>
+                <p class="component-description">These basic avatars can be created by adding the class <strong>'avatar'</strong> to the <strong>img</strong> tag for which you want to make a avatar.</p>
 
                 <div class="code-visual-container">
-                    <div class="alert-container">
-                        <div class="alert primary">
-                            This is a Primary Alert!
-                            <button class="alert-action-btn">
-                                <i class="simple material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert success">
-                            This is a Success Alert!
-                            <button class="alert-action-btn">
-                                <i class="simple material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert error">
-                            This is a Error Alert!
-                            <button class="alert-action-btn">
-                                <i class="simple material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert warning">
-                            This is a Warning Alert!
-                            <button class="alert-action-btn">
-                                <i class="simple material-icons">close</i>
-                            </button>
-                        </div>
-                    </div>
+                    <img class="avatar" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
+                    <img class="avatar" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar-3">
+                    <img class="avatar" src="/assets/avatar/old man.jpg" alt="avatar-4">
+                    <img class="avatar" src="/assets/avatar/river.jpg" alt="avatar-5">
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'alert' followed by variant name to use the Alert component--&gt;
+            &lt;!-- Using class 'avatar' to use the basic avatar--&gt;
 
-             
-            &lt;div class="alert primary"&gt;
-            This is a Primary Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="simple material-icons"&gt;close &lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
-
-            &lt;div class="alert success"&gt;
-            This is a Success Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="simple material-icons"&gt;close &lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
-
-            &lt;div class="alert error"&gt;
-            This is a Error Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="simple material-icons"&gt;close &lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
-
-            &lt;div class="alert warning"&gt;
-            This is a Warning Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="simple material-icons"&gt;close &lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
+            &lt;img class="avatar" src="/assets/avatar/sparrow.jpg" alt="avatar-1"&gt;
+            &lt;img class="avatar" src="/assets/avatar/person.jpg" alt="avatar-2"&gt;
+            &lt;img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar-3"&gt;
+            &lt;img class="avatar" src="/assets/avatar/old man.jpg" alt="avatar-4"&gt;
+            &lt;img class="avatar" src="/assets/avatar/river.jpg" alt="avatar-5"&gt;
                         </code>
                     </pre>
                 </div>
                 <hr>
 
-                <!-- Light Simple Alerts -->
+                <!-- Varied Size Avatars -->
 
-                <h4 class="content-title">Light Simple Alert</h4>
-                <p class="component-description">This is the light colored version of the Simple alerts. Add class <strong>'light'</strong> class after alert class and variant class name.</p>
+                <h4 class="content-title">Varied Size Avatar</h4>
+                <p class="component-description">These avatars can be used apart from the default option by adding the class <strong>'avatar-{sm|m|l}'</strong> to the <strong>img</strong> tag for which you want to make a avatar.</p>
 
                 <div class="code-visual-container">
-                    <div class="alert-container">
-                        <div class="alert primary light">
-                            This is a Primary Alert!
-                            <button class="alert-action-btn">
-                                <i class="light material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert success light">
-                            This is a Success Alert!
-                            <button class="alert-action-btn">
-                                <i class="light material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert error light">
-                            This is a Error Alert!
-                            <button class="alert-action-btn">
-                                <i class="light material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert warning light">
-                            This is a Warning Alert!
-                            <button class="alert-action-btn">
-                                <i class="light material-icons">close</i>
-                            </button>
-                        </div>
-                    </div>
+                    <img class="avatar-sm" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
+                    <img class="avatar-md" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <img class="avatar-lg" src="/assets/avatar/sea.jpg" alt="avatar-3">
+                    <img class="avatar-md" src="/assets/avatar/old man.jpg" alt="avatar-4">
+                    <img class="avatar-sm" src="/assets/avatar/river.jpg" alt="avatar-5">
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'light' after alert class and variant name class.--&gt;
+            &lt;!-- Using class 'avatar-{ sm | md | lg }' to use the varied size avatar--&gt;
 
-            &lt;div class="alert primary light"&gt;
-                This is a Primary Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="light material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
-
-            &lt;div class="alert success light"&gt;
-                This is a Success Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="light material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
-
-            &lt;div class="alert error light"&gt;
-                This is a Error Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="light material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
-
-            &lt;div class="alert warning light"&gt;
-                This is a Warning Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="light material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
+            &lt;img class="avatar-sm" src="/assets/avatar/sparrow.jpg" alt="avatar-1"&gt;
+            &lt;img class="avatar-md" src="/assets/avatar/person.jpg" alt="avatar-2"&gt;
+            &lt;img class="avatar-lg" src="/assets/avatar/sea.jpg" alt="avatar-3"&gt;
+            &lt;img class="avatar-md" src="/assets/avatar/old man.jpg" alt="avatar-4"&gt;
+            &lt;img class="avatar-sm" src="/assets/avatar/river.jpg" alt="avatar-5"&gt;
                         </code>
                     </pre>
                 </div>
                 <hr>
 
-                <!-- Outlined Alerts -->
+                <!-- Square Avatars -->
 
-                <h4 class="content-title">Outline Alert</h4>
-                <p class="component-description">Outline alert can be used by adding class <strong>'outline'</strong> after the alert class and variant class name.</p>
+                <h4 class="content-title">Square Avatar</h4>
+                <p class="component-description">Avatars can be made square shaped by adding the class <strong>'square'</strong> to the already existing class <strong>'avatar-{sm|md|lg}'</strong> in the <strong>img</strong> tag for which you want to make a avatar.</p>
 
                 <div class="code-visual-container">
-                    <div class="alert-container">
-                        <div class="alert primary outline">
-                            This is a Primary Alert!
-                            <button class="alert-action-btn">
-                                <i class="material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert success outline">
-                            This is a Success Alert!
-                            <button class="alert-action-btn">
-                                <i class="material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert error outline">
-                            This is a Error Alert!
-                            <button class="alert-action-btn">
-                                <i class="material-icons">close</i>
-                            </button>
-                        </div>
-                        <div class="alert warning outline">
-                            This is a Warning Alert!
-                            <button class="alert-action-btn">
-                                <i class="material-icons">close</i>
-                            </button>
-                        </div>
-                    </div>
+                    <img class="avatar-sm square" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
+                    <img class="avatar-md square" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <img class="avatar-lg square" src="/assets/avatar/sea.jpg" alt="avatar-3">
+                    <img class="avatar-md square" src="/assets/avatar/old man.jpg" alt="avatar-4">
+                    <img class="avatar-sm square" src="/assets/avatar/river.jpg" alt="avatar-5">
+
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'outline' after alert class and variant name class.--&gt;
+            &lt;!-- Add class 'square' to use the square shaped avatars--&gt;
 
-            &lt;div class="alert primary outline"&gt;
-                This is a Primary Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
+            &lt;img class="avatar-sm square" src="/assets/avatar/sparrow.jpg" alt="avatar-1"&gt;
+            &lt;img class="avatar-m square" src="/assets/avatar/person.jpg" alt="avatar-2"&gt;
+            &lt;img class="avatar-l square" src="/assets/avatar/sea.jpg" alt="avatar-3"&gt;
+            &lt;img class="avatar-md square" src="/assets/avatar/old man.jpg" alt="avatar-4"&gt;
+            &lt;img class="avatar-sm square" src="/assets/avatar/river.jpg" alt="avatar-5"&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
 
-            &lt;div class="alert success outline"&gt;
-                This is a Success Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
+                <!-- Initials Avatar -->
 
-            &lt;div class="alert error outline"&gt;
-                This is a Error Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
+                <h4 class="content-title">Initials Avatar</h4>
+                <p class="component-description">Avatars with just initials can be added using the class <strong>'avatar-init'</strong> to the <strong>img</strong> tag for which you want to make a avatar.</p>
 
-            &lt;div class="alert warning outline"&gt;
-                This is a Warning Alert!
-                &lt;button class="alert-action-btn"&gt;
-                    &lt;i class="material-icons"&gt;close&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
+                <div class="code-visual-container">
+                    <div class="avatar-init">BM</div>
+                    <div class="avatar-init">SM</div>
+                    <div class="avatar-init">RS</div>
+                    <div class="avatar-init">TP</div>
+                    <div class="avatar-init">PP</div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Add class 'avatar-init' to use the initials avatars--&gt;
+
+            &lt;div class="avatar-init"&gt;BM&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;SM&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;RS&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;TP&lt;/div&gt;
+            &lt;div class="avatar-init"&gt;PP&lt;/div&gt;
                         </code>
                     </pre>
                 </div>
@@ -274,8 +172,8 @@
             </div>
 
             <footer>
-                <a class="left-nav" href="#"><span class="material-icons">arrow_back</span>Conclusion</a>
-                <a class="right-nav" href="../Avatar/avatar.html">Avatar<span class="material-icons">arrow_forward</span></a>
+                <a class="left-nav" href="#"><span class="material-icons">arrow_back</span>Alert</a>
+                <a class="right-nav" href="#">Badge<span class="material-icons">arrow_forward</span></a>
             </footer>
         </main>
     </div>
