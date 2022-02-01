@@ -40,7 +40,7 @@ main {
 .action-btns {
     display: flex;
     width: 40%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     padding-top: 50px;
     align-items: center;
     justify-content: space-between;
@@ -48,6 +48,7 @@ main {
 
 .action-btns a {
     cursor: pointer;
+    margin-right: 20px;
     border: 2px solid var(--primary-color);
     transition: 100ms transform ease-in;
     box-shadow: 3px 3px 5px 2px #ebebeb;
