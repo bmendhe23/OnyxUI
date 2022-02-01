@@ -13,35 +13,6 @@ hr {
     border: 0.2px solid rgb(236, 236, 236);
 }
 
-h3, ul {
-    margin-left: 15px;
-}
-
-ul {
-    list-style: none;
-    font-weight: 300;
-}
-
-.sidebar {
-    width: 200px;
-    line-height: 3;
-    grid-area: sidebar;
-}
-
-.cmp-items, .get-started-items {
-    transition: 100ms margin ease-in;
-}
-
-.cmp-items:hover, .get-started-items:hover {
-    font-weight: 500;
-    margin: 0 0 0 10px;
-}
-
-.active {
-    font-weight: 500;
-    margin-left: 10px;
-}
-
 .doc-container {
     display: flex;
     flex-direction: column;
