@@ -7,11 +7,6 @@ ul {
     font-weight: 300;
 }
 
-aside {
-    position: sticky;
-    top: 136px;
-}
-
 .sidebar {
     width: 200px;
     line-height: 3;
