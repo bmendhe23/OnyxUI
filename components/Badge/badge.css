@@ -20,8 +20,8 @@
     font-size: .5rem;
     width: 16px;
     height: 16px;
-    top: -12%;
-    right: -5%;
+    top: 0;
+    right: -3%;
     color: white;
     background-color: var(--primary-style-color);
     display: flex;
@@ -34,16 +34,16 @@
     width: 12px;
     height: 12px;
     font-size: .4rem;
-    top: -2%;
-    right: -4%;
+    top: 12%;
+    right: -2%;
 }
 
 .text-lg {
     width: 20px;
     height: 20px;
     font-size: .8rem;
-    top: -10%;
-    right: -6%;
+    top: -5%;
+    right: -4%;
 }
 
 .number {
