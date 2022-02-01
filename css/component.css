@@ -35,6 +35,7 @@ h2 {
 .component-description {
     margin-bottom: 25px;
     text-align: justify;
+    line-height: 1.4;
 }
 
 .note-highlight {
@@ -47,8 +48,8 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
     background-color: antiquewhite;
-    height: 125px;
     border-radius: 5px;
+    padding: 25px 12px;
 }
 
 .text-badge-container {
@@ -58,6 +59,16 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
 }
+
+/* alert example container */
+
+.alert-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* highlightJs css */
 
 .hljs {
     border-radius: 5px;

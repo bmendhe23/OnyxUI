@@ -12,6 +12,17 @@
 :root {
     --primary-style-color: #3B82F6;
     --primary-color: #374151;
+    --default-light: #E5E7EB;
     --primary-brand-color: #1F2937;
     --primary-background-btn: #F9FAFB;
+    --secondary-color: #D1D5DB;
+    --success-color: #10B981;
+    --error-color: #EF4444;
+    --warning-color: #F59B0E;
+    --primary-light: #BFDBFE;
+    --success-light: #A7F3D0;
+    --error-light: #FECACA;
+    --warning-light: #FDE68A;
+    --link-color: #6366F1;
+    --link-light: #C7D2FE;
 }
