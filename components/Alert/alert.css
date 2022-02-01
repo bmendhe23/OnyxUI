@@ -55,19 +55,19 @@
 }
 
 .light.primary {
-    background-color: #BFDBFE;
+    background-color: var(--primary-light);
 }
 
 .light.success {
-    background-color: #A7F3D0;
+    background-color: var(--success-light);
 }
 
 .light.error {
-    background-color: #FECACA;
+    background-color: var(--error-light);
 }
 
 .light.warning {
-    background-color: #FDE68A;
+    background-color: var(--warning-light);
 }
 
 /* outline alerts */
