@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Badge</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="badge.css">
+    <link rel="stylesheet" href="../Avatar/avatar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="#">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="badge.html" class="cmp-items active">Badge</a></li>
+                    <li><a href="#" class="cmp-items">Button</a></li>
+                    <li><a href="#" class="cmp-items">Card</a></li>
+                    <li><a href="#" class="cmp-items">Image</a></li>
+                    <li><a href="#" class="cmp-items">Input</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Badge</h2>
+            </div>
+            <p class="component-description">Badges are additional components added to another component that show information related to the component they are added to. They can be added to show status, count, etc.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Status Badges -->
+                
+                <h4 class="content-title">Status Badge</h4>
+                <p class="component-description">The status can be added to the user avatars by adding the class <strong>'badge'</strong> to the container which contains the avatar and adding the variant accordingly as show.
+                <p class="component-description note-highlight">Note: This has 5 variants - online | offline | dnd | idle | invisible</p>
+
+                <div class="code-visual-container">
+                    <div class="badge">
+                        <img class="avatar" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
+                        <div class="online"></div>
+                    </div>
+                    <div class="badge">
+                        <img class="avatar" src="/assets/avatar/person.jpg" alt="avatar-2">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="badge">
+                        <img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar-3">
+                        <div class="dnd"></div>
+                    </div>
+                    <div class="badge">
+                        <img class="avatar" src="/assets/avatar/old man.jpg" alt="avatar-4">
+                        <div class="idle"></div>
+                        
+                    </div>
+                    <div class="badge">
+                        <img class="avatar" src="/assets/avatar/river.jpg" alt="avatar-5">
+                        <div class="invisible"></div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'badge' and variant class to use the status badge--&gt;
+
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="/assets/avatar/sparrow.jpg" alt="avatar-1"&gt;
+                &lt;div class="online"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="/assets/avatar/person.jpg" alt="avatar-2"&gt;
+                &lt;div class="offline"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar-3"&gt;
+                &lt;div class="dnd"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="/assets/avatar/old man.jpg" alt="avatar-4"&gt;
+                &lt;div class="idle"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="/assets/avatar/river.jpg" alt="avatar-5"&gt;
+                &lt;div class="invisible"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Text Badges -->
+
+                <h4 class="content-title">Text Badge</h4>
+                <p class="component-description">These badges can be put over a text by adding the class <strong>'text'</strong> to the div in the badge.</p>
+                <p class="component-description note-highlight">Note: This has two variants - Default: text | text-sm | text-lg </p>  
+
+                <div class="code-visual-container">
+                    <div class="text-badge-container">
+                        <div class="badge">
+                            <div>This is a text with small text Badge</div>
+                            <div class="text-sm">5</div>
+                        </div>
+                        <div class="badge">
+                            <div>This is a text with default text Badge</div>
+                            <div class="text">5</div>
+                        </div>
+                        <div class="badge">
+                            <div>This is a text with large large text Badge</div>
+                            <div class="text-lg">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'badge' to use variant class of text badge to use text badge--&gt;
+
+            &lt;div class="badge">
+                &lt;div&gt;This is a text with small text Badge&lt;/div&gt;
+                &lt;div class="text-sm"&gt;5&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;div&gt;This is a text with default text Badge&lt;/div&gt;
+                &lt;div class="text"&gt;5&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;div&gt;This is a text with large large text Badge&lt;/div&gt;
+                &lt;div class="text-lg"&gt;5&lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Number Badges -->
+
+                <h4 class="content-title">Number Badge</h4>
+                <p class="component-description">These can be used to show the no. of items present in the parent element. This badge can be added using the class <strong>'number'</strong> with the parent element having badge class. This can be used on <strong>icons</strong>, <strong>avatars</strong>, etc.</p>
+                <p class="component-description note-highlight">Note: This has a variant - Add class 'lt' for number badge on left side.</p>
+
+                <div class="code-visual-container">
+                    <div class="badge">
+                        <img class="avatar" src="/assets/avatar/person.jpg" alt="avatar">
+                        <div class="number">5</div>
+                    </div>
+                    <div class="badge">
+                        <img src="/assets/badge/cart.svg" alt="cart">
+                        <div class="number">11</div>
+                    </div>
+                    <div class="badge">
+                        <img src="/assets/badge/message.svg" alt="cart">
+                        <div class="number dnd">10</div>
+                    </div>
+                    <div class="badge">
+                        <img src="/assets/badge/message.svg" alt="cart">
+                        <div class="number lt dnd">10</div>
+                    </div>
+                    <div class="badge">
+                        <img src="/assets/badge/notifications.svg" alt="cart">
+                        <div class="number lt">7</div>
+                    </div>
+                    <div class="badge">
+                        <img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar">
+                        <div class="number lt">12</div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Add class 'number' to use the number badges--&gt;
+
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="/assets/avatar/person.jpg" alt="avatar"&gt;
+                &lt;div class="number"&gt;5&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img src="/assets/badge/cart.svg" alt="cart"&gt;
+                &lt;div class="number"&gt;11&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img src="/assets/badge/message.svg" alt="cart"&gt;
+                &lt;div class="number dnd"&gt;10&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img src="/assets/badge/message.svg" alt="cart"&gt;
+                &lt;div class="number lt dnd"&gt;10&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img src="/assets/badge/notifications.svg" alt="cart"&gt;
+                &lt;div class="number lt"&gt;7&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="/assets/avatar/sea.jpg" alt="avatar"&gt;
+                &lt;div class="number lt"&gt;12&lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+            <footer>
+                <a class="left-nav" href="../Avatar/avatar.html"><span class="material-icons">arrow_back</span>Avatar</a>
+                <a class="right-nav" href="../Button/button.html">Button<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

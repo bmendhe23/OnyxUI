@@ -1,0 +1,77 @@
+.badge {
+    position: relative;
+}
+
+.online, .offline, .idle, .invisible, .dnd , .text, .text-sm, .text-lg, .number {
+    position: absolute;
+}
+
+.online, .offline, .idle, .invisible, .dnd {
+    right: 2%;
+    bottom: 12%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.text, .text-sm, .text-lg, .number {
+    border-radius: 50%;
+    font-size: .5rem;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: -3%;
+    color: white;
+    background-color: var(--primary-style-color);
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-sm {
+    width: 12px;
+    height: 12px;
+    font-size: .4rem;
+    top: 12%;
+    right: -2%;
+}
+
+.text-lg {
+    width: 20px;
+    height: 20px;
+    font-size: .8rem;
+    top: -5%;
+    right: -4%;
+}
+
+.number {
+    top: -5%;
+    right: 0;
+}
+
+.lt {
+    top: -5%;
+    left: 0;
+}
+
+.online {
+    background-color: rgb(1, 185, 1);
+}
+
+.offline {
+    background-color: rgb(155, 155, 155);
+}
+
+.dnd {
+    background-color: red;
+}
+
+.idle {
+    background-color: rgb(255, 187, 0);
+}
+
+.invisible {
+    background-color: rgb(78, 78, 78);
+}
