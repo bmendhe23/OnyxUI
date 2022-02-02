@@ -66,6 +66,40 @@
             <hr>
             <div class="doc-body">
 
+                <!-- Text only Cards -->
+
+                <h4 class="content-title">Text only Card</h4>
+                <p class="component-description">This card only contains the title and description of the object. Text only cards can be used by using class <strong>'text-card'</strong> in the card container.</p>
+
+                <div class="code-visual-container">
+                    <div class="text-card">
+                        <div class="card-title">
+                            Text Card Title
+                        </div>
+                        <div class="card-description">
+                            This is the card description which contains a brief summary of the title mentioned above. It give the user a idea about the title.
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'text-card' followed by various card elements. --&gt;
+
+            &lt;div class="text-card"&gt;
+                &lt;div class="card-title"&gt;
+                    Text Card Title
+                &lt;/div&gt;
+                &lt;div class="card-description"&gt;
+                    This is the card description which contains a brief summary of the 
+                    title mentioned above. It give the user a idea about the title.
+                &lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
                 <!-- Simple Card -->
                 
                 <h4 class="content-title">Simple Card</h4>
@@ -133,13 +167,109 @@
                 </div>
                 <hr>
 
-                <!-- Text only Cards -->
+                <!-- Card with Badges -->
 
-                <h4 class="content-title">Text only Card</h4>
-                <p class="component-description">This card only contains the title and description of the object. Text only cards can be used by using class <strong>'text-card'</strong> in the card container.</p>
+                <h4 class="content-title">Card with Badges</h4>
+                <p class="component-description">Card with badges are mostly used to show status of the poduct, or any other information. It can used other ways too. Card with badge can be used by using class <strong>'card-badge'</strong> to the card container.</p>
 
                 <div class="code-visual-container">
                     <div class="text-card">
+                        <div class="card-badge">Card Badge</div>
+                        <div class="card-title">
+                            Text Card Title
+                        </div>
+                        <div class="card-description">
+                            This is the card description which contains a brief summary of the title mentioned above. It give the user a idea about the title.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/assets/card/anime.jpg" alt="anime-card">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-badge">NEW</div>
+                            <div class="card-title">
+                                Anime taking over the world
+                            </div>
+                            <div class="card-author">
+                                By Bhushan Mendhe
+                            </div>
+                            <div class="card-description">
+                                Ten reasons why anime will soon take over the animation industry and why anime has started becoming the most watched animated shows all over the world.
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">
+                                    READ MORE
+                                </button>
+                                <button class="btn btn-secondary">
+                                    BOOKMARK
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'card-badge' inside the 'card' class container. --&gt;
+
+            &lt;!-- Using class 'card-badge' inside the 'text-card' class container. --&gt;
+
+            &lt;div class="text-card"&gt;
+                &lt;div class="card-badge"&gt;Card Badge&lt;/div&gt;
+                &lt;div class="card-title"&gt;
+                    Text Card Title
+                &lt;/div&gt;
+                &lt;div class="card-description"&gt;
+                    This is the card description which contains a brief summary of the 
+                    title mentioned above. It give the user a idea about the title.
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Using class 'card-badge' inside the 'card' class container. --&gt;
+
+            &lt;div class="card"&gt;
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/anime.jpg" alt="anime-card"&gt;
+                &lt;/div&gt;
+                &lt;div class="card-info"&gt;
+                    &lt;div class="card-badge"&gt;NEW&lt;/div&gt;
+                    &lt;div class="card-title"&gt;
+                        Anime taking over the world
+                    &lt;/div&gt;
+                    &lt;div class="card-author"&gt;
+                        By Bhushan Mendhe
+                    &lt;/div&gt;
+                    &lt;div class="card-description"&gt;
+                        Ten reasons why anime will soon take over the animation industry 
+                        and why anime has started becoming the most watched animated 
+                        shows all over the world.
+                    &lt;/div&gt;
+                    &lt;div class="card-actions"&gt;
+                        &lt;button class="btn btn-primary"&gt;
+                            READ MORE
+                        &lt;/button&gt;
+                        &lt;button class="btn btn-secondary"&gt;
+                            BOOKMARK
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;  
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Dismissible Cards -->
+
+                <h4 class="content-title">Dismissible Card</h4>
+                <p class="component-description">Dismissible Cards allows user the option to dismiss the card when they don't want to see it. Dismissible Cards can be used by adding the class <strong>'dismiss-card'</strong> to the card container after the <strong>card variant</strong> class.</p>
+
+                <div class="code-visual-container">
+                    <div class="text-card dismiss-card">
+                        <button class="btn-dismiss">
+                            <span class="material-icons">close</span>
+                        </button>
                         <div class="card-title">
                             Text Card Title
                         </div>
@@ -151,9 +281,12 @@
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Adding class 'light' to the variant class after btn class.--&gt;
+            &lt;!-- Adding class 'dismiss-card' to the card variant and 'btn-dismiss' to the dismiss button. --&gt;
 
-            &lt;div class="text-card"&gt;
+            &lt;div class="text-card dismiss-card"&gt;
+                &lt;button class="btn-dismiss"&gt;
+                    &lt;span class="material-icons"&gt;close&lt;/span&gt;
+                &lt;/button&gt;
                 &lt;div class="card-title"&gt;
                     Text Card Title
                 &lt;/div&gt;
@@ -162,58 +295,6 @@
                     title mentioned above. It give the user a idea about the title.
                 &lt;/div&gt;
             &lt;/div&gt;
-                        </code>
-                    </pre>
-                </div>
-                <hr>
-
-                <!-- Outlined Buttons -->
-
-                <h4 class="content-title">Outline Button</h4>
-                <p class="component-description">Outline Buttons can be used by adding class <strong>'outline'</strong> to the variant class name after 'btn' class.</p>
-
-                <div class="code-visual-container">
-                    <button class="btn btn-outline">DEFAULT</button>
-                    <button class="btn btn-primary-outline">PRIMARY</button>
-                    <button class="btn btn-secondary-outline">SECONDARY</button>
-                    <button class="btn btn-success-outline">SUCCESS</button>
-                    <button class="btn btn-error-outline">ERROR</button>
-                    <button class="btn btn-warning-outline">WARNING</button>
-                </div>
-                <div class="code-example-container">
-                    <pre>
-                        <code class="language-html">
-            &lt;!-- Adding class 'outline' to the variant class after btn class.--&gt;
-
-            &lt;button class="btn btn-outline"&gt;DEFAULT&lt;/button&gt;
-            &lt;button class="btn btn-primary-outline"&gt;PRIMARY&lt;/button&gt;
-            &lt;button class="btn btn-secondary-outline"&gt;SECONDARY&lt;/button&gt;
-            &lt;button class="btn btn-success-outline"&gt;SUCCESS&lt;/button&gt;
-            &lt;button class="btn btn-error-outline"&gt;ERROR&lt;/button&gt;
-            &lt;button class="btn btn-warning-outline"&gt;WARNING&lt;/button&gt;
-                        </code>
-                    </pre>
-                </div>
-                <hr>
-
-                <!-- Link Buttons -->
-
-                <h4 class="content-title">Link Button</h4>
-                <p class="component-description">Link Buttons can be used by adding class <strong>'btn-link'</strong> after 'btn' class.</p>
-
-                <div class="code-visual-container">
-                    <button class="btn btn-link">LINK</button>
-                    <button class="btn btn-link-light">LINK</button>
-                    <button class="btn btn-link-outline">LINK</button>
-                </div>
-                <div class="code-example-container">
-                    <pre>
-                        <code class="language-html">
-            &lt;!-- Adding class 'btn-link' after btn class.--&gt;
-
-            &lt;button class="btn btn-link"&gt;LINK&lt;/button&gt;
-            &lt;button class="btn btn-link-light"&gt;LINK&lt;/button&gt;
-            &lt;button class="btn btn-link-outline"&gt;LINK&lt;/button&gt;
                         </code>
                     </pre>
                 </div>
