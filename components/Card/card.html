@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Card</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <!-- remove this class after finish -->
+    <link rel="stylesheet" href="../Button/button.css">
+    <!-- keep this class -->
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="../Alert/alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="card.html" class="cmp-items active">Card</a></li>
+                    <li><a href="#" class="cmp-items">Image</a></li>
+                    <li><a href="#" class="cmp-items">Input</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Card</h2>
+            </div>
+            <p class="component-description">Cards are one of those components which are widely used to show instant summary of the objects in the form of images, title, description, etc.</p>
+            <p class="component-description">They should be informative enough to give a clear idea about the object it is trying to present to the user.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Simple Card -->
+                
+                <h4 class="content-title">Simple Card</h4>
+                <p class="component-description">Simple card contains a image, title, description and action buttons to it. This can be used by adding class <strong>'card'</strong> to the container it is in.</p>
+
+                <div class="code-visual-container">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'btn' followed by variant name to use the various classic buttons--&gt;
+
+            &lt;button class="btn"&gt;DEFAULT&lt;/button&gt;
+            &lt;button class="btn btn-primary"&gt;PRIMARY&lt;/button&gt;
+            &lt;button class="btn btn-secondary"&gt;SECONDARY&lt;/button&gt;
+            &lt;button class="btn btn-success"&gt;SUCCESS&lt;/button&gt;
+            &lt;button class="btn btn-error"&gt;ERROR&lt;/button&gt;
+            &lt;button class="btn btn-warning"&gt;WARNING&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Light Classic Buttons -->
+
+                <h4 class="content-title">Light Classic Button</h4>
+                <p class="component-description">This is the light colored version of the Classic Button. Add class <strong>'light'</strong> to the variant class name after 'btn' class.</p>
+
+                <div class="code-visual-container">
+                    <button class="btn btn-light">DEFAULT</button>
+                    <button class="btn btn-primary-light">PRIMARY</button>
+                    <button class="btn btn-success-light">SUCCESS</button>
+                    <button class="btn btn-error-light">ERROR</button>
+                    <button class="btn btn-warning-light">WARNING</button>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'light' to the variant class after btn class.--&gt;
+
+            &lt;div class="code-visual-container"&gt;
+                &lt;button class="btn btn-light"&gt;DEFAULT&lt;/button&gt;
+                &lt;button class="btn btn-primary-light"&gt;PRIMARY&lt;/button&gt;
+                &lt;button class="btn btn-success-light"&gt;SUCCESS&lt;/button&gt;
+                &lt;button class="btn btn-error-light"&gt;ERROR&lt;/button&gt;
+                &lt;button class="btn btn-warning-light"&gt;WARNING&lt;/button&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Outlined Buttons -->
+
+                <h4 class="content-title">Outline Button</h4>
+                <p class="component-description">Outline Buttons can be used by adding class <strong>'outline'</strong> to the variant class name after 'btn' class.</p>
+
+                <div class="code-visual-container">
+                    <button class="btn btn-outline">DEFAULT</button>
+                    <button class="btn btn-primary-outline">PRIMARY</button>
+                    <button class="btn btn-secondary-outline">SECONDARY</button>
+                    <button class="btn btn-success-outline">SUCCESS</button>
+                    <button class="btn btn-error-outline">ERROR</button>
+                    <button class="btn btn-warning-outline">WARNING</button>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'outline' to the variant class after btn class.--&gt;
+
+            &lt;button class="btn btn-outline"&gt;DEFAULT&lt;/button&gt;
+            &lt;button class="btn btn-primary-outline"&gt;PRIMARY&lt;/button&gt;
+            &lt;button class="btn btn-secondary-outline"&gt;SECONDARY&lt;/button&gt;
+            &lt;button class="btn btn-success-outline"&gt;SUCCESS&lt;/button&gt;
+            &lt;button class="btn btn-error-outline"&gt;ERROR&lt;/button&gt;
+            &lt;button class="btn btn-warning-outline"&gt;WARNING&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Link Buttons -->
+
+                <h4 class="content-title">Link Button</h4>
+                <p class="component-description">Link Buttons can be used by adding class <strong>'btn-link'</strong> after 'btn' class.</p>
+
+                <div class="code-visual-container">
+                    <button class="btn btn-link">LINK</button>
+                    <button class="btn btn-link-light">LINK</button>
+                    <button class="btn btn-link-outline">LINK</button>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'btn-link' after btn class.--&gt;
+
+            &lt;button class="btn btn-link"&gt;LINK&lt;/button&gt;
+            &lt;button class="btn btn-link-light"&gt;LINK&lt;/button&gt;
+            &lt;button class="btn btn-link-outline"&gt;LINK&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Icon Buttons -->
+
+                <h4 class="content-title">Icon Button</h4>
+                <p class="component-description">Icon Buttons can be used by adding class <strong>'btn-icon'</strong> after 'btn' class.</p>
+
+                <div class="code-visual-container">
+                    <button class="btn btn-icon">
+                        <i class="material-icons">star_rate</i>
+                        STAR
+                    </button>
+                    <button class="btn btn-primary btn-icon">
+                        <i class="material-icons">info</i>
+                        INFO
+                    </button>
+                    <button class="btn btn-success btn-icon">
+                        <i class="material-icons">lock</i>
+                    </button>
+                    <button class="btn btn-success btn-icon">
+                        <i class="material-icons">verified</i>
+                    </button>
+                    <button class="btn btn-error btn-icon">
+                        DELETE
+                        <i class="material-icons">delete</i>
+                    </button>
+                    <button class="btn btn-warning btn-icon">
+                        WARNING
+                        <i class="material-icons">warning</i>
+                    </button>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'btn-icon' after btn class.--&gt;
+
+            &lt;button class="btn btn-icon"&gt;
+                &lt;i class="material-icons"&gt;star_rate&lt;/i&gt;
+                STAR
+            &lt;/button&gt;
+
+            &lt;button class="btn btn-primary btn-icon"&gt;
+                &lt;i class="material-icons"&gt;info&lt;/i&gt;
+                INFO
+            &lt;/button&gt;
+
+            &lt;button class="btn btn-success btn-icon"&gt;
+                &lt;i class="material-icons"&gt;lock&lt;/i&gt;
+            &lt;/button&gt;
+
+            &lt;button class="btn btn-success btn-icon"&gt;
+                &lt;i class="material-icons"&gt;verified&lt;/i&gt;
+            &lt;/button&gt;
+
+            &lt;button class="btn btn-error btn-icon"&gt;
+                DELETE
+                &lt;i class="material-icons"&gt;delete&lt;/i&gt;
+            &lt;/button&gt;
+
+            &lt;button class="btn btn-warning btn-icon"&gt;
+                WARNING
+                &lt;i class="material-icons"&gt;warning&lt;/i&gt;
+            &lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Floating Buttons -->
+
+                <h4 class="content-title">Float Button</h4>
+                <p class="component-description">Float Buttons can be used by adding class <strong>'btn-float'</strong> after 'btn' class.</p>
+                <p class="component-description note-highlight">Note: Position of the float button can be set by modifying the - <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, and <strong>left</strong> properties for <strong>btn-float</strong> class. <br>Here it has been positioned according to the <strong>float container</strong>.</p>
+
+                <div class="code-visual-container">
+                    <div class="float-container">
+                        <button class="btn btn-primary btn-icon btn-float">
+                            <i class="material-icons">arrow_upward</i>
+                        </button>
+                        <button class="btn btn-error btn-icon btn-float">
+                            <i class="material-icons">add</i>
+                        </button>
+                        <button class="btn btn-success btn-icon btn-float">
+                            <i class="material-icons">group_add</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'btn-float' after btn class.--&gt;
+
+            &lt;div class="float-container"&gt;
+                &lt;button class="btn btn-primary btn-icon btn-float"&gt;
+                    &lt;i class="material-icons"&gt;arrow_upward&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;button class="btn btn-error btn-icon btn-float"&gt;
+                    &lt;i class="material-icons"&gt;add&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;button class="btn btn-success btn-icon btn-float"&gt;
+                    &lt;i class="material-icons"&gt;group_add&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Button/button.html"><span class="material-icons">arrow_back</span>Button</a>
+                <a class="right-nav" href="../Image/image.html">Image<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
