@@ -71,6 +71,7 @@ h2 {
 /* highlightJs css */
 
 .hljs {
+    font-size: .9rem;
     border-radius: 5px;
 }
 
