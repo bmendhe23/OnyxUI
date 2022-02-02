@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/component.css">
-    <!-- remove this class after finish -->
     <link rel="stylesheet" href="../Button/button.css">
-    <!-- keep this class -->
     <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="../Avatar/avatar.css">
 </head>
 <body>
     <header>
@@ -90,7 +89,7 @@
                 &lt;div class="card-title"&gt;
                     Text Card Title
                 &lt;/div&gt;
-                
+
                 &lt;div class="card-description"&gt;
                     This is the card description which contains a brief summary of the 
                     title mentioned above. It give the user a idea about the title.
@@ -329,14 +328,14 @@
                     <div class="overlay-card">
                         <div class="card-img">
                             <img src="/assets/card/anime.jpg" alt="anime-card">
-                        </div>
-                        <div class="card-info">
                             <div class="card-title">
                                 Anime taking over the world
                             </div>
                             <div class="card-author">
                                 By Bhushan Mendhe
                             </div>
+                        </div>
+                        <div class="card-info">
                             <div class="card-description">
                                 Ten reasons why anime will soon take over the animation industry and why anime has started becoming the most watched animated shows all over the world.
                             </div>
@@ -393,43 +392,135 @@
                 </div>
                 <hr>
 
-                <!-- Floating Buttons -->
+                <!-- Vertical Card -->
 
-                <h4 class="content-title">Float Button</h4>
-                <p class="component-description">Float Buttons can be used by adding class <strong>'btn-float'</strong> after 'btn' class.</p>
-                <p class="component-description note-highlight">Note: Position of the float button can be set by modifying the - <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, and <strong>left</strong> properties for <strong>btn-float</strong> class. <br>Here it has been positioned according to the <strong>float container</strong>.</p>
+                <h4 class="content-title">Vertical Card</h4>
+                <p class="component-description">This serves the same purpose but is different in sense of it's layout on the screen as it is potrait. Use Vertical card by using class <strong>'vertical-card'</strong> in the card container.</p>
 
                 <div class="code-visual-container">
-                    <div class="float-container">
-                        <button class="btn btn-primary btn-icon btn-float">
-                            <i class="material-icons">arrow_upward</i>
-                        </button>
-                        <button class="btn btn-error btn-icon btn-float">
-                            <i class="material-icons">add</i>
-                        </button>
-                        <button class="btn btn-success btn-icon btn-float">
-                            <i class="material-icons">group_add</i>
-                        </button>
+                    <div class="vertical-card">
+                        <div class="card-img">
+                            <img src="/assets/card/art-skill.jpg" alt="Skill Art">
+                            <div class="card-icon-tab">
+                                <i class="material-icons">visibility</i>2194
+                                <i class="material-icons">chat_bubble</i>316
+                                <i class="material-icons">file_download</i>1982
+                            </div>
+                        </div>
+
+                        <div class="vertical-card-info">
+                                <!-- Author Avatar -->
+                                <img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar">
+                            
+                            <div class="vertical-card-details">
+                                <div class="vertical-card-title">
+                                    The Skill of Art
+                                </div>
+    
+                                <div class="vertical-card-author">
+                                    By Onyx Designs
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Adding class 'btn-float' after btn class.--&gt;
+            &lt;!-- Adding class 'vertical-card' in the card container. --&gt;
+            
+            &lt;!-- Vertical Card --&gt;
 
-            &lt;div class="float-container"&gt;
-                &lt;button class="btn btn-primary btn-icon btn-float"&gt;
-                    &lt;i class="material-icons"&gt;arrow_upward&lt;/i&gt;
-                &lt;/button&gt;
+            &lt;div class="vertical-card"&gt;
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/art-skill.jpg" alt="Skill Art"&gt;
+                    &lt;div class="card-icon-tab"&gt;
+                        &lt;i class="material-icons"&gt;visibility&lt;/i&gt;2194
+                        &lt;i class="material-icons"&gt;chat_bubble&lt;/i&gt;316
+                        &lt;i class="material-icons"&gt;file_download&lt;/i&gt;1982
+                    &lt;/div&gt;
+                &lt;/div&gt;
 
-                &lt;button class="btn btn-error btn-icon btn-float"&gt;
-                    &lt;i class="material-icons"&gt;add&lt;/i&gt;
-                &lt;/button&gt;
+                &lt;div class="vertical-card-info"&gt;
+                        &lt;!-- Author Avatar --&gt;
+                        &lt;img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar"&gt;
+                    
+                    &lt;div class="vertical-card-details"&gt;
+                        &lt;div class="vertical-card-title"&gt;
+                            The Skill of Art
+                        &lt;/div&gt;
 
-                &lt;button class="btn btn-success btn-icon btn-float"&gt;
-                    &lt;i class="material-icons"&gt;group_add&lt;/i&gt;
-                &lt;/button&gt;
-            &lt;/div>
+                        &lt;div class="vertical-card-author"&gt;
+                            By Onyx Designs
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Horizontal Card -->
+
+                <h4 class="content-title">Horizontal Card</h4>
+                <p class="component-description">This serves the same purpose but is different in sense of it's layout on the screen as it is landscape. Use Vertical card by using class <strong>'vertical-card'</strong> in the card container.</p>
+
+                <div class="code-visual-container">
+                    <div class="horizontal-card">
+                        <div class="card-img">
+                            <img src="/assets/card/mountain.jpg" alt="Mountain Life">
+                            <div class="card-icon-tab">
+                                <i class="material-icons">visibility</i>1199
+                                <i class="material-icons">chat_bubble</i>402
+                                <i class="material-icons">file_download</i>1512
+                            </div>
+                        </div>
+
+                        <div class="horizontal-card-info">
+                                <!-- Author Avatar -->
+                                <img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar">
+                            
+                                <div class="horizontal-card-title">
+                                    Mountain Life
+                                </div>
+    
+                                <div class="horizontal-card-author">
+                                    By Onyx Designs
+                                </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'horizontal-card' in the card container. --&gt;
+            
+            &lt;!-- Horizontal Card --&gt;
+
+            &lt;div class="horizontal-card"&gt;
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/mountain.jpg" alt="Mountain Life"&gt;
+                    &lt;div class="card-icon-tab"&gt;
+                        &lt;i class="material-icons"&gt;visibility&lt;/i&gt;1199
+                        &lt;i class="material-icons"&gt;chat_bubble&lt;/i&gt;402
+                        &lt;i class="material-icons"&gt;file_download&lt;/i&gt;1512
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="horizontal-card-info"&gt;
+                        &lt;!-- Author Avatar --&gt;
+                        &lt;img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar"&gt;
+                    
+                        &lt;div class="horizontal-card-title"&gt;
+                            Mountain Life
+                        &lt;/div&gt;
+
+                        &lt;div class="horizontal-card-author"&gt;
+                            By Onyx Designs
+                        &lt;/div&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
                         </code>
                     </pre>
                 </div>

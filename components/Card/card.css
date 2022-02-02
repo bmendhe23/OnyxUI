@@ -1,10 +1,14 @@
-.card, .text-card, .overlay-card {
+.card, .text-card, .overlay-card, .vertical-card, .horizontal-card {
     position: relative;
     width: 300px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     box-shadow: 2px 2px 9px var(--author-desc-color);
+}
+
+.card-img {
+    position: relative;
 }
 
 .card-img img {
@@ -121,14 +125,14 @@
 .overlay-card .card-title {
     color: white;
     position: absolute;
-    top: 38%;
+    bottom: 35px;
     right: 0;
 }
 
 .overlay-card .card-author {
     color: white;
     position: absolute;
-    top: 47%;
+    bottom: 12px;
     right: 0;
 }
 
@@ -152,3 +156,79 @@
     cursor: pointer;
     color: var(--primary-color);
 }
+
+/* vertical card */
+
+.vertical-card {
+    width: 220px;
+}
+
+.vertical-card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 7px;
+    margin: -2% 0; 
+    width: 220px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.vertical-card-title, .horizontal-card-title {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.vertical-card-author, .horizontal-card-author {
+    color: var(--author-desc-color);
+    font-size: .7rem;
+}
+
+.vertical-card-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-icon-tab {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+    bottom: 10px;
+    font-weight: 400;
+}
+
+.card-icon-tab i {
+    margin: 0 3px 0 10px;
+}
+
+.vertical-card .material-icons, .horizontal-card .material-icons {
+    color: white;
+    font-size: 15px;
+}
+
+/* Horizontal Card */
+
+.horizontal-card {
+    flex-direction: row;
+}
+
+.horizontal-card .card-img img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+}
+
+.horizontal-card .horizontal-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400%;
+    
+}
+
