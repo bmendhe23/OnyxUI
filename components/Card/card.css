@@ -1,0 +1,76 @@
+.card, .text-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-info {
+    margin-top: -2%;
+    background-color: white;
+    padding: 10px 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-title {
+    margin: 3px 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.card-author {
+    color: var(--author-desc-color);
+    margin: 3px;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.card-description {
+    color: var(--author-desc-color);
+    margin: 5px;
+    text-align: justify;
+    font-size: .8rem;
+    line-height: 1.3;
+}
+
+.card .btn {
+    font-size: .75rem;
+    font-weight: 400;
+    padding: 8px 7px;
+    margin: 5px 8px 0 0;
+}
+
+.card .btn-primary:hover {
+    background-color: var(--card-primary-hover-color);
+}
+
+.card .btn-secondary:hover {
+    background-color: var(--author-desc-color);
+}
+
+.card-actions {
+    display: flex;
+
+}
+
+/* text card */
+
+.text-card {
+    border-radius: 4px;
+    box-shadow: 2px 2px 9px var(--primary-color);
+    background-color: white;
+}
+
+.text-card .card-title, .text-card .card-description {
+    width: 90%;
+    margin: 10px auto;
+}
