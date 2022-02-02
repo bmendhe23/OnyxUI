@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Card</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="../Button/button.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="../Avatar/avatar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="../Alert/alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="card.html" class="cmp-items active">Card</a></li>
+                    <li><a href="#" class="cmp-items">Image</a></li>
+                    <li><a href="#" class="cmp-items">Input</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Card</h2>
+            </div>
+            <p class="component-description">Cards are one of those components which are widely used to show instant summary of the objects in the form of images, title, description, etc.</p>
+            <p class="component-description">They should be informative enough to give a clear idea about the object it is trying to present to the user.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Text only Cards -->
+
+                <h4 class="content-title">Text only Card</h4>
+                <p class="component-description">This card only contains the title and description of the object. Text only cards can be used by using class <strong>'text-card'</strong> in the card container.</p>
+
+                <div class="code-visual-container">
+                    <div class="text-card">
+                        <div class="card-title">
+                            Text Card Title
+                        </div>
+                        <div class="card-description">
+                            This is the card description which contains a brief summary of the title mentioned above. It give the user a idea about the title.
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'text-card' followed by various card elements. --&gt;
+
+            &lt;div class="text-card"&gt;
+                &lt;div class="card-title"&gt;
+                    Text Card Title
+                &lt;/div&gt;
+
+                &lt;div class="card-description"&gt;
+                    This is the card description which contains a brief summary of the 
+                    title mentioned above. It give the user a idea about the title.
+                &lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Simple Card -->
+                
+                <h4 class="content-title">Simple Card</h4>
+                <p class="component-description">Simple card contains a image, title, description and action buttons to it. This can be used by adding class <strong>'card'</strong> to the container it is in.</p>
+
+                <div class="code-visual-container">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/assets/card/anime.jpg" alt="anime-card">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                Anime taking over the world
+                            </div>
+                            <div class="card-author">
+                                By Bhushan Mendhe
+                            </div>
+                            <div class="card-description">
+                                Ten reasons why anime will soon take over the animation industry and why anime has started becoming the most watched animated shows all over the world.
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">
+                                    READ MORE
+                                </button>
+                                <button class="btn btn-secondary">
+                                    BOOKMARK
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'card' followed by various card elements to use the card--&gt;
+
+            &lt;div class="card"&gt;
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/anime.jpg" alt="anime-card"&gt;
+                &lt;/div&gt;
+
+                &lt;div class="card-info"&gt;
+                    &lt;div class="card-title"&gt;
+                        Anime taking over the world
+                    &lt;/div&gt;
+
+                    &lt;div class="card-author"&gt;
+                        By Bhushan Mendhe
+                    &lt;/div&gt;
+
+                    &lt;div class="card-description"&gt;
+                        Ten reasons why anime will soon take over the animation 
+                        industry and why anime has started becoming the most watched 
+                        animated shows all over the world.
+                    &lt;/div&gt;
+
+                    &lt;div class="card-actions"&gt;
+                        &lt;button class="btn btn-primary"&gt;
+                            READ MORE
+                        &lt;/button&gt;
+
+                        &lt;button class="btn btn-secondary"&gt;
+                            BOOKMARK
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;  
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Card with Badges -->
+
+                <h4 class="content-title">Card with Badges</h4>
+                <p class="component-description">Card with badges are mostly used to show status of the poduct, or any other information. It can used other ways too. Card with badge can be used by using class <strong>'card-badge'</strong> to the card container.</p>
+
+                <div class="code-visual-container">
+                    <div class="text-card">
+                        <div class="card-badge">Card Badge</div>
+                        <div class="card-title">
+                            Text Card Title
+                        </div>
+                        <div class="card-description">
+                            This is the card description which contains a brief summary of the title mentioned above. It give the user a idea about the title.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/assets/card/anime.jpg" alt="anime-card">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-badge">NEW</div>
+                            <div class="card-title">
+                                Anime taking over the world
+                            </div>
+                            <div class="card-author">
+                                By Bhushan Mendhe
+                            </div>
+                            <div class="card-description">
+                                Ten reasons why anime will soon take over the animation industry and why anime has started becoming the most watched animated shows all over the world.
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">
+                                    READ MORE
+                                </button>
+                                <button class="btn btn-secondary">
+                                    BOOKMARK
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'card-badge' inside the 'card' class container. --&gt;
+
+            &lt;!-- Using class 'card-badge' inside the 'text-card' class container. --&gt;
+
+            &lt;div class="text-card"&gt;
+
+                &lt;div class="card-badge"&gt;Card Badge&lt;/div&gt;
+
+                &lt;div class="card-title"&gt;
+                    Text Card Title
+                &lt;/div&gt;
+
+                &lt;div class="card-description"&gt;
+                    This is the card description which contains a brief summary of the 
+                    title mentioned above. It give the user a idea about the title.
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Using class 'card-badge' inside the 'card' class container. --&gt;
+
+            &lt;div class="card"&gt;
+
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/anime.jpg" alt="anime-card"&gt;
+                &lt;/div&gt;
+
+                &lt;div class="card-info"&gt;
+                    &lt;div class="card-badge"&gt;NEW&lt;/div&gt;
+
+                    &lt;div class="card-title"&gt;
+                        Anime taking over the world
+                    &lt;/div&gt;
+
+                    &lt;div class="card-author"&gt;
+                        By Bhushan Mendhe
+                    &lt;/div&gt;
+
+                    &lt;div class="card-description"&gt;
+                        Ten reasons why anime will soon take over the animation industry 
+                        and why anime has started becoming the most watched animated 
+                        shows all over the world.
+                    &lt;/div&gt;
+
+                    &lt;div class="card-actions"&gt;
+                        &lt;button class="btn btn-primary"&gt;
+                            READ MORE
+                        &lt;/button&gt;
+
+                        &lt;button class="btn btn-secondary"&gt;
+                            BOOKMARK
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;  
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Dismissible Cards -->
+
+                <h4 class="content-title">Dismissible Card</h4>
+                <p class="component-description">Dismissible Cards allows user the option to dismiss the card when they don't want to see it. Dismissible Cards can be used by adding the class <strong>'dismiss-card'</strong> to the card container after the <strong>card variant</strong> class.</p>
+
+                <div class="code-visual-container">
+                    <div class="text-card dismiss-card">
+                        <button class="btn-dismiss">
+                            <span class="material-icons">close</span>
+                        </button>
+                        <div class="card-title">
+                            Text Card Title
+                        </div>
+                        <div class="card-description">
+                            This is the card description which contains a brief summary of the title mentioned above. It give the user a idea about the title.
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'dismiss-card' to the card variant and 'btn-dismiss' to the dismiss button. --&gt;
+
+            &lt;div class="text-card dismiss-card"&gt;
+
+                &lt;button class="btn-dismiss"&gt;
+                    &lt;span class="material-icons"&gt;close&lt;/span&gt;
+                &lt;/button&gt;
+
+                &lt;div class="card-title"&gt;
+                    Text Card Title
+                &lt;/div&gt;
+
+                &lt;div class="card-description"&gt;
+                    This is the card description which contains a brief summary of the 
+                    title mentioned above. It give the user a idea about the title.
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Text Overlay Card -->
+
+                <h4 class="content-title">Text Overlay Card</h4>
+                <p class="component-description">Text overlay cards contain a text-overlay over a image. It is more like the simple card but some text is over the image. Text overlay card can be used by using class <strong>'overlay-card'</strong> in the card container.</p>
+
+                <div class="code-visual-container">
+                    <div class="overlay-card">
+                        <div class="card-img">
+                            <img src="/assets/card/anime.jpg" alt="anime-card">
+                            <div class="card-title">
+                                Anime taking over the world
+                            </div>
+                            <div class="card-author">
+                                By Bhushan Mendhe
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-description">
+                                Ten reasons why anime will soon take over the animation industry and why anime has started becoming the most watched animated shows all over the world.
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-outline btn-icon">
+                                    <i class="material-icons">favorite_outline</i>
+                                </button>
+                                <button class="btn-outline btn-icon">
+                                    <i class="material-icons">bookmark_outline</i>
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'overlay-card' in the card container. --&gt;
+
+            &lt;div class="overlay-card"&gt;
+
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/anime.jpg" alt="anime-card"&gt;
+                &lt;/div&gt;
+
+                &lt;div class="card-info"&gt;
+                    &lt;div class="card-title"&gt;
+                        Anime taking over the world
+                    &lt;/div&gt;
+
+                    &lt;div class="card-author"&gt;
+                        By Bhushan Mendhe
+                    &lt;/div&gt;
+
+                    &lt;div class="card-description"&gt;
+                        Ten reasons why anime will soon take over the animation industry 
+                        and why anime has started becoming the most watched animated 
+                        shows all over the world.
+                    &lt;/div&gt;
+
+                    &lt;div class="card-actions"&gt;
+                        &lt;button class="btn-outline btn-icon"&gt;
+                            &lt;i class="material-icons"&gt;favorite_outline&lt;/i&gt;
+                        &lt;/button&gt;
+
+                        &lt;button class="btn-outline btn-icon"&gt;
+                            &lt;i class="material-icons"&gt;bookmark_outline&lt;/i&gt;
+                        &lt;/button&gt;                      
+                    &lt;/div&gt;
+                &lt;/div&gt;  
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Vertical Card -->
+
+                <h4 class="content-title">Vertical Card</h4>
+                <p class="component-description">This serves the same purpose but is different in sense of it's layout on the screen as it is potrait. Use Vertical card by using class <strong>'vertical-card'</strong> in the card container.</p>
+
+                <div class="code-visual-container">
+                    <div class="vertical-card">
+                        <div class="card-img">
+                            <img src="/assets/card/art-skill.jpg" alt="Skill Art">
+                            <div class="card-icon-tab">
+                                <i class="material-icons">visibility</i>2194
+                                <i class="material-icons">chat_bubble</i>316
+                                <i class="material-icons">file_download</i>1982
+                            </div>
+                        </div>
+
+                        <div class="vertical-card-info">
+                                <!-- Author Avatar -->
+                                <img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar">
+                            
+                            <div class="vertical-card-details">
+                                <div class="vertical-card-title">
+                                    The Skill of Art
+                                </div>
+    
+                                <div class="vertical-card-author">
+                                    By Onyx Designs
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'vertical-card' in the card container. --&gt;
+            
+            &lt;!-- Vertical Card --&gt;
+
+            &lt;div class="vertical-card"&gt;
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/art-skill.jpg" alt="Skill Art"&gt;
+                    &lt;div class="card-icon-tab"&gt;
+                        &lt;i class="material-icons"&gt;visibility&lt;/i&gt;2194
+                        &lt;i class="material-icons"&gt;chat_bubble&lt;/i&gt;316
+                        &lt;i class="material-icons"&gt;file_download&lt;/i&gt;1982
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="vertical-card-info"&gt;
+                        &lt;!-- Author Avatar --&gt;
+                        &lt;img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar"&gt;
+                    
+                    &lt;div class="vertical-card-details"&gt;
+                        &lt;div class="vertical-card-title"&gt;
+                            The Skill of Art
+                        &lt;/div&gt;
+
+                        &lt;div class="vertical-card-author"&gt;
+                            By Onyx Designs
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Horizontal Card -->
+
+                <h4 class="content-title">Horizontal Card</h4>
+                <p class="component-description">This serves the same purpose but is different in sense of it's layout on the screen as it is landscape. Use Vertical card by using class <strong>'vertical-card'</strong> in the card container.</p>
+
+                <div class="code-visual-container">
+                    <div class="horizontal-card">
+                        <div class="card-img">
+                            <img src="/assets/card/mountain.jpg" alt="Mountain Life">
+                            <div class="card-icon-tab">
+                                <i class="material-icons">visibility</i>1199
+                                <i class="material-icons">chat_bubble</i>402
+                                <i class="material-icons">file_download</i>1512
+                            </div>
+                        </div>
+
+                        <div class="horizontal-card-info">
+                                <!-- Author Avatar -->
+                                <img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar">
+                            
+                                <div class="horizontal-card-title">
+                                    Mountain Life
+                                </div>
+    
+                                <div class="horizontal-card-author">
+                                    By Onyx Designs
+                                </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Adding class 'horizontal-card' in the card container. --&gt;
+            
+            &lt;!-- Horizontal Card --&gt;
+
+            &lt;div class="horizontal-card"&gt;
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/mountain.jpg" alt="Mountain Life"&gt;
+                    &lt;div class="card-icon-tab"&gt;
+                        &lt;i class="material-icons"&gt;visibility&lt;/i&gt;1199
+                        &lt;i class="material-icons"&gt;chat_bubble&lt;/i&gt;402
+                        &lt;i class="material-icons"&gt;file_download&lt;/i&gt;1512
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="horizontal-card-info"&gt;
+                        &lt;!-- Author Avatar --&gt;
+                        &lt;img class="avatar" src="/assets/card/woman.jpg" alt="author-avatar"&gt;
+                    
+                        &lt;div class="horizontal-card-title"&gt;
+                            Mountain Life
+                        &lt;/div&gt;
+
+                        &lt;div class="horizontal-card-author"&gt;
+                            By Onyx Designs
+                        &lt;/div&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Button/button.html"><span class="material-icons">arrow_back</span>Button</a>
+                <a class="right-nav" href="../Image/image.html">Image<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
