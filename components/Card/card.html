@@ -300,67 +300,68 @@
                 </div>
                 <hr>
 
-                <!-- Icon Buttons -->
+                <!-- Text Overlay Card -->
 
-                <h4 class="content-title">Icon Button</h4>
-                <p class="component-description">Icon Buttons can be used by adding class <strong>'btn-icon'</strong> after 'btn' class.</p>
+                <h4 class="content-title">Text Overlay Card</h4>
+                <p class="component-description">Text overlay cards contain a text-overlay over a image. It is more like the simple card but some text is over the image. Text overlay card can be used by using class <strong>'overlay-card'</strong> in the card container.</p>
 
                 <div class="code-visual-container">
-                    <button class="btn btn-icon">
-                        <i class="material-icons">star_rate</i>
-                        STAR
-                    </button>
-                    <button class="btn btn-primary btn-icon">
-                        <i class="material-icons">info</i>
-                        INFO
-                    </button>
-                    <button class="btn btn-success btn-icon">
-                        <i class="material-icons">lock</i>
-                    </button>
-                    <button class="btn btn-success btn-icon">
-                        <i class="material-icons">verified</i>
-                    </button>
-                    <button class="btn btn-error btn-icon">
-                        DELETE
-                        <i class="material-icons">delete</i>
-                    </button>
-                    <button class="btn btn-warning btn-icon">
-                        WARNING
-                        <i class="material-icons">warning</i>
-                    </button>
+                    <div class="overlay-card">
+                        <div class="card-img">
+                            <img src="/assets/card/anime.jpg" alt="anime-card">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                Anime taking over the world
+                            </div>
+                            <div class="card-author">
+                                By Bhushan Mendhe
+                            </div>
+                            <div class="card-description">
+                                Ten reasons why anime will soon take over the animation industry and why anime has started becoming the most watched animated shows all over the world.
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-outline btn-icon">
+                                    <i class="material-icons">favorite_outline</i>
+                                </button>
+                                <button class="btn-outline btn-icon">
+                                    <i class="material-icons">bookmark_outline</i>
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Adding class 'btn-icon' after btn class.--&gt;
+            &lt;!-- Adding class 'overlay-card' in the card container. --&gt;
 
-            &lt;button class="btn btn-icon"&gt;
-                &lt;i class="material-icons"&gt;star_rate&lt;/i&gt;
-                STAR
-            &lt;/button&gt;
-
-            &lt;button class="btn btn-primary btn-icon"&gt;
-                &lt;i class="material-icons"&gt;info&lt;/i&gt;
-                INFO
-            &lt;/button&gt;
-
-            &lt;button class="btn btn-success btn-icon"&gt;
-                &lt;i class="material-icons"&gt;lock&lt;/i&gt;
-            &lt;/button&gt;
-
-            &lt;button class="btn btn-success btn-icon"&gt;
-                &lt;i class="material-icons"&gt;verified&lt;/i&gt;
-            &lt;/button&gt;
-
-            &lt;button class="btn btn-error btn-icon"&gt;
-                DELETE
-                &lt;i class="material-icons"&gt;delete&lt;/i&gt;
-            &lt;/button&gt;
-
-            &lt;button class="btn btn-warning btn-icon"&gt;
-                WARNING
-                &lt;i class="material-icons"&gt;warning&lt;/i&gt;
-            &lt;/button&gt;
+            &lt;div class="overlay-card"&gt;
+                &lt;div class="card-img"&gt;
+                    &lt;img src="/assets/card/anime.jpg" alt="anime-card"&gt;
+                &lt;/div&gt;
+                &lt;div class="card-info"&gt;
+                    &lt;div class="card-title"&gt;
+                        Anime taking over the world
+                    &lt;/div&gt;
+                    &lt;div class="card-author"&gt;
+                        By Bhushan Mendhe
+                    &lt;/div&gt;
+                    &lt;div class="card-description"&gt;
+                        Ten reasons why anime will soon take over the animation industry 
+                        and why anime has started becoming the most watched animated 
+                        shows all over the world.
+                    &lt;/div&gt;
+                    &lt;div class="card-actions"&gt;
+                        &lt;button class="btn-outline btn-icon"&gt;
+                            &lt;i class="material-icons"&gt;favorite_outline&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button class="btn-outline btn-icon"&gt;
+                            &lt;i class="material-icons"&gt;bookmark_outline&lt;/i&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;  
+            &lt;/div&gt;
                         </code>
                     </pre>
                 </div>
