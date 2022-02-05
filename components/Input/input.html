@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Input</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="../Image/image.css">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="../Alert/alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
+                    <li><a href="/input.html" class="cmp-items active">Input</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Input</h2>
+            </div>
+            <p class="component-description">Input fields allow the user to input data in order to get something when used in a form. They are in general used to get user response.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Normal Input -->
+                
+                <h4 class="content-title">Normal Input</h4>
+                <p class="component-description">Normal input fields can be use used by using class <strong>'input'</strong> to the input field.</p>
+
+                <div class="code-visual-container">
+                    <div class="input-container">
+                        <input class="input" type="text" placeholder="Username">
+                        <input class="input" type="text" placeholder="Password">
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'input' to use the normal input. --&gt;
+
+            &lt;div class="input-container"&gt;
+                &lt;input class="input" type="text" placeholder="Username"&gt;
+                &lt;input class="input" type="text" placeholder="Password"&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Input with Icons -->
+
+                <h4 class="content-title">Input with Icon</h4>
+                <p class="component-description">Input fields with icon can be use used by using class <strong>'input-icon'</strong> to the input field.</p>
+
+                <div class="code-visual-container">
+                    <div class="input-container">
+                        <div class="input-icon">
+                            <i class="material-icons">email</i>
+                            <input  class="input" type="text" placeholder="Username">
+                        </div>
+                        <div class="input-icon">
+                            <i class="material-icons">lock</i>
+                            <input  class="input" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'input-icon' to use the input field with icon. --&gt;
+
+            &lt;div class="input-container"&gt;
+                &lt;div class="input-icon"&gt;
+                    &lt;i class="material-icons"&gt;email&lt;/i&gt;
+                    &lt;input  class="input" type="text" placeholder="Username"&gt;
+                &lt;/div&gt;
+                &lt;div class="input-icon"&gt;
+                    &lt;i class="material-icons"&gt;lock&lt;/i&gt;
+                    &lt;input  class="input" type="text" placeholder="Password"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Input with Validation Style -->
+
+                <h4 class="content-title">Input with Validation Style</h4>
+                <p class="component-description">Input with validation style can be used by using the class <strong>'valid-input'</strong> to the container containing the validation message.</p>
+
+                <div class="code-visual-container">
+                    <div class="input-container">
+                        <div class="valid-input">
+                            <input class="input" type="email" placeholder="email@gmail.com">
+                            <div class="validation-msg">
+                                Valid Email
+                                <i class="material-icons">check</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'valid-input' to the container containing validation msg. --&gt;
+
+            &lt;div class="input-container"&gt;
+                &lt;div class="valid-input"&gt;
+                    &lt;input class="input" type="email" placeholder="E-mail"&gt;
+                    &lt;div class="validation-msg"&gt;
+                        Valid Email
+                        &lt;i class="material-icons"&gt;check&lt;/i&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Input with Error Style -->
+
+                <h4 class="content-title">Input with Error Style</h4>
+                <p class="component-description">Input with error style can be used by using the class <strong>'error-input'</strong> to the container containing the error message.</p>
+
+                <div class="code-visual-container">
+                    <div class="input-container">
+                        <div class="error-input">
+                            <input class="input" type="password" placeholder="*******">
+                            <div class="error-msg">
+                                Invalid Password
+                                <i class="material-icons">close</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'error-input' to the container containing the error message. --&gt;
+
+            &lt;div class="input-container"&gt;
+                &lt;div class="error-input"&gt;
+                    &lt;input class="input" type="password" placeholder="*******"&gt;
+                    &lt;div class="error-msg"&gt;
+                        Invalid Password
+                        &lt;i class="material-icons"&gt;close&lt;/i&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                
+                <!-- Rounded Input -->
+                
+                <h4 class="content-title">Round Input</h4>
+                <p class="component-description">Round input fields can be use used by using class <strong>'round-input'</strong> to the input field.</p>
+
+                <div class="code-visual-container">
+                    <div class="input-container">
+                        <input class="round-input" type="text" placeholder="Username">
+                        <input class="round-input" type="text" placeholder="Password">
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'round-input' to use the round input. --&gt;
+
+            &lt;div class="input-container"&gt;
+                &lt;input class="round-input" type="text" placeholder="Username"&gt;
+                &lt;input class="round-input" type="text" placeholder="Password"&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                
+                <!-- Checkbox Input -->
+                
+                <h4 class="content-title">Checkbox</h4>
+                <p class="component-description">Checkbox allows the user to select one or more options out of the available options. Checkbox can be use used by using class <strong>'checkbox'</strong> to the container containing checkbox.</p>
+
+                <div class="code-visual-container">
+                    <div class="checkbox">
+                        <label for="option-1">
+                            <input class="" type="checkbox">
+                            Option 1
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="option-2">
+                            <input type="checkbox">
+                            Option 2
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="option-3">
+                            <input type="checkbox">
+                            Option 3
+                        </label>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'checkbox' to the container containing checkbox. --&gt;
+
+            &lt;div class="checkbox"&gt;
+                &lt;label for="option-1"&gt;
+                    &lt;input type="checkbox"&gt;
+                    Option 1
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class="checkbox"&gt;
+                &lt;label for="option-2"&gt;
+                    &lt;input type="checkbox"&gt;
+                    Option 2
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class="checkbox"&gt;
+                &lt;label for="option-3"&gt;
+                    &lt;input type="checkbox"&gt;
+                    Option 3
+                &lt;/label&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                
+                <!-- Radio Buttons -->
+                
+                <h4 class="content-title">Radio</h4>
+                <p class="component-description">Radio allows the user to select one option out of the available options. Radio can be use used by using class <strong>'radio'</strong> to the container containing radio.</p>
+
+                <div class="code-visual-container">
+                    <div class="radio">
+                        <label for="option-1">
+                            <input name="option" type="radio">
+                            Option 1
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="option-2">
+                            <input name="option" type="radio">
+                            Option 2
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="option-3">
+                            <input name="option" type="radio">
+                            Option 3
+                        </label>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'radio' to the container containing radio. --&gt;
+
+            &lt;div class="radio"&gt;
+                &lt;label for="option-1"&gt;
+                    &lt;input name="option" type="radio"&gt;
+                    Option 1
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class="radio"&gt;
+                &lt;label for="option-2"&gt;
+                    &lt;input name="option" type="radio"&gt;
+                    Option 2
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class="radio"&gt;
+                &lt;label for="option-3"&gt;
+                    &lt;input name="option" type="radio"&gt;
+                    Option 3
+                &lt;/label&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Image/image.html"><span class="material-icons">arrow_back</span>Image</a>
+                <!-- <a class="right-nav" href="../Input/input.html">Input<span class="material-icons">arrow_forward</span></a> -->
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

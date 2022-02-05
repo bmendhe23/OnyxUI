@@ -1,0 +1,110 @@
+.input-container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* normal input */
+
+.input, .round-input {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    outline: none;
+}
+
+.input:focus, .round-input:focus {
+    border: 1px solid var(--primary-style-color);
+}
+
+/* input field with icons */
+
+.input-icon {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.input-icon .material-icons {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    color: var(--secondary-color);
+}
+
+.input-icon .input {
+    padding-left: 2rem;
+}
+
+/* validation input */
+
+.valid-input {
+    width: 100%;
+}
+
+.valid-input .input {
+    border: 1px solid var(--success-color);
+}
+
+.validation-msg {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    font-size: .9rem;
+    color: var(--success-color);
+}
+
+.validation-msg .material-icons {
+    margin-left: 5px;
+    font-size: 1em;
+    color: var(--success-color);
+}
+
+/* error input */
+
+.error-input {
+    width: 100%;
+}
+
+.error-input .input {
+    border: 1px solid var(--error-color);
+}
+
+.error-msg {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    font-size: .9rem;
+    color: var(--error-color);
+}
+
+.error-msg .material-icons {
+    margin-left: 5px;
+    font-size: 1em;
+    color: var(--error-color);
+}
+
+/* round-input */
+.round-input {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 50px;
+}
+
+/* checkboxes and radio buttons*/
+
+.checkbox label, .radio label{
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.checkbox input, .radio input {
+    margin: 5px;
+}
