@@ -1,6 +1,6 @@
 .round-img, .square-img {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     max-width: 100%;
     border-radius: 50%;
     object-fit: cover;
