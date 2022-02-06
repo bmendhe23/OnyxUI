@@ -21,7 +21,7 @@ hr {
     grid-area: main;
 }
 
-h2 {
+.doc-head h2 {
     font-size: 2.3rem;
     margin-bottom: 25px;
     font-weight: 900;
@@ -64,6 +64,13 @@ h2 {
 
 .alert-container {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* heading text-utility container */
+
+.code-visual-container .heading-container {
     display: flex;
     flex-direction: column;
 }
