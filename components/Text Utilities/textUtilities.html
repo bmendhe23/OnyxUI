@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyx : Image</title>
+    <title>Onyx : Text Utilites</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/component.css">
-    <link rel="stylesheet" href="../Avatar/avatar.css">
-    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="textUtilities.css">
 </head>
 <body>
     <header>
@@ -24,7 +23,7 @@
                 <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
             </section>
             <section class="nav-links">
-                <a href="../Alert/alert.html">Documentation<span class="bottom-line"></span></a>
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
             </section>
         </nav>
     </header>
@@ -44,13 +43,13 @@
                 <h3 class="components-head"><a href="#">Components</a></h3>
                 <hr>
                 <ul>
-                    <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
-                    <li><a href="/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
                     <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
                     <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
                     <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
                     <li><a href="#" class="cmp-items">Grid</a></li>
-                    <li><a href="image.html" class="cmp-items active">Image</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
                     <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
                     <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
                     <li><a href="#" class="cmp-items">Modal</a></li>
@@ -58,74 +57,69 @@
                     <li><a href="#" class="cmp-items">Rating</a></li>
                     <li><a href="#" class="cmp-items">Slider</a></li>
                     <li><a href="#" class="cmp-items">Snackbar</a></li>
-                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
+                    <li><a href="textUtilities.html" class="cmp-items active">Text Utilites</a></li>
                 </ul>
             </div>
         </aside>
         <main class="doc-container">
             <div class="doc-head">
-                <h2>Image</h2>
+                <h2>Text Utilites</h2>
             </div>
-            <p class="component-description">Images give the user visual information related to any topic. They in a way also enhance the user experience as the web pages also look good having images in them.</p>
+            <p class="component-description">Text Utilites defines the options available for the text elements on your webpage.</p>
             <hr>
             <div class="doc-body">
 
-                <!-- Round Images -->
+                <!-- Headings -->
                 
-                <h4 class="content-title">Round Image</h4>
-                <p class="component-description">Round images can be used by using class <strong>'round-img'</strong> to the image which you want to make round.</p>
+                <h4 class="content-title">Heading</h4>
+                <p class="component-description">Heading starting from h1 to h6.</p>
 
                 <div class="code-visual-container">
-                    <img class="round-img" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
-                    <img class="round-img" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <div class="heading-container">
+                        <h1>This is a h1 heading.</h1>
+                        <h2>This is a h2 heading.</h2>
+                        <h3>This is a h3 heading.</h3>
+                        <h4>This is a h4 heading.</h4>
+                        <h5>This is a h5 heading.</h5>
+                        <h6>This is a h6 heading.</h6>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'round-img' to use the round image--&gt;
 
-            &lt;img class="round-img" src="img-url" alt="round-img-1"&gt;
-            &lt;img class="round-img" src="img-url" alt="round-img-2"&gt;
+            &lt;h1&gt;This is a h1 heading.&lt;/h1&gt;
+            &lt;h2&gt;This is a h2 heading.&lt;/h2&gt;
+            &lt;h3&gt;This is a h3 heading.&lt;/h3&gt;
+            &lt;h4&gt;This is a h4 heading.&lt;/h4&gt;
+            &lt;h5&gt;This is a h5 heading.&lt;/h5&gt;
+            &lt;h6&gt;This is a h6 heading.&lt;/h6&gt;
+
                         </code>
                     </pre>
                 </div>
                 <hr>
 
-                <!-- Square Image -->
+                <!-- Small Text, Gray Text and Centered Text -->
 
-                <h4 class="content-title">Square Image</h4>
-                <p class="component-description">Square images can be used by using class <strong>'square-img'</strong> to the image which you want to make square.</p>
+                <h4 class="content-title">Small, Gray and Centered Text</h4>
+                <p class="component-description">Small, Gray, and Center text can be used by adding element inside <strong>small</strong>, class <strong>'gray-text'</strong>, class <strong>centered-text</strong> respectively.</p>
 
                 <div class="code-visual-container">
-                    <img class="square-img" src="/assets/avatar/sparrow.jpg" alt="square-img-1">
-                    <img class="square-img" src="/assets/avatar/person.jpg" alt="square-img-2">
+                    <div class="text-container">
+                        <small>This is a small text.</small>
+                        <p class="gray-text">This is a gray text.</p>
+                        <p class="centered-text">This is a centered Text</p>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'square-img' to use the square image. --&gt;
+            &lt;!-- Using class 'gray-text' and 'centered-text' to use gray and centered text. --&gt;
 
-            &lt;img class="square-img" src="img-url" alt="square-img-1"&gt;
-            &lt;img class="square-img" src="img-url" alt="sqaure-img-2"&gt;
-                        </code>
-                    </pre>
-                </div>
-                <hr>
-
-                <!-- Responsive Image -->
-
-                <h4 class="content-title">Responsive Image</h4>
-                <p class="component-description">Images can be made responsive by using class <strong>'responsive-img'</strong> to the image which you want to make responsive.</p>
-
-                <div class="code-visual-container">
-                    <img class="responsive-img" src="/assets/avatar/river.jpg" alt="responsive-img">
-                </div>
-                <div class="code-example-container">
-                    <pre>
-                        <code class="language-html">
-            &lt;!-- Using class 'responsive-img' to make the image responsive. --&gt;
-
-            &lt;img class="responsive-img" src="img-url" alt="responsive-img"&gt;
+            &lt;small&gt;This is a small text.&lt;/small&gt;
+            &lt;p class="gray-text"&gt;This is a gray text.&lt;/p&gt;
+            &lt;p class="centered-text"&gt;This is a centered Text&lt;/p&gt;
                         </code>
                     </pre>
                 </div>
@@ -133,8 +127,8 @@
             </div>
 
             <footer>
-                <a class="left-nav" href="../Card/card.html"><span class="material-icons">arrow_back</span>Card</a>
-                <a class="right-nav" href="../Input/input.html">Input<span class="material-icons">arrow_forward</span></a>
+                <a class="left-nav" href="../Snackbar/snackbar.html"><span class="material-icons">arrow_back</span>Snackbar</a>
+                <!-- <a class="right-nav" href="#">Toast<span class="material-icons">arrow_forward</span></a> -->
             </footer>
         </main>
     </div>
