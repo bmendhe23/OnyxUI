@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Lists</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="../Avatar/avatar.css">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="../Text Utilities/textUtilities.html">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
+                    <li><a href="#" class="cmp-items">Grid</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
+                    <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
+                    <li><a href="list.html" class="cmp-items active">Lists</a></li>
+                    <li><a href="#" class="cmp-items">Modal</a></li>
+                    <li><a href="#" class="cmp-items">Navigation</a></li>
+                    <li><a href="#" class="cmp-items">Notify</a></li>
+                    <li><a href="#" class="cmp-items">Rating</a></li>
+                    <li><a href="#" class="cmp-items">Slider</a></li>
+                    <li><a href="#" class="cmp-items">Snackbar</a></li>
+                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
+                    <li><a href="#" class="cmp-items">Toast</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Lists</h2>
+            </div>
+            <p class="component-description">Lists help to categorize information points. They help to deduce the information to the user.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Simple Lists -->
+                
+                <h4 class="content-title">Spaced List</h4>
+                <p class="component-description">Spaced list can be used by adding class <strong>'spaced-list'</strong> to the list container.</p>
+
+                <div class="code-visual-container">
+                    <ol class="spaced-list">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                        <li>List Item 4</li>
+                    </ol>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'spaced-list' in list container to use spaced list. --&gt;
+
+            &lt;ol class="spaced-list"&gt;
+                &lt;li&gt;List Item 1&lt;/li&gt;
+                &lt;li&gt;List Item 2&lt;/li&gt;
+                &lt;li&gt;List Item 3&lt;/li&gt;
+                &lt;li&gt;List Item 4&lt;/li&gt;
+            &lt;/ol&gt;
+
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Stacked List -->
+
+                <h4 class="content-title">Stacked List</h4>
+                <p class="component-description">Stacked list are lists that are stacked on each other. These are used in notifications. Stacked list can be used by using class <strong>'stacked-list'</strong> in the list container with class <strong>'link-item'</strong></p>
+
+                <div class="code-visual-container">
+                    <ul class="stacked-list">
+                        <li class="list-item">
+                            <img class="avatar avatar-sm" src="../../assets/avatar/person.jpg" alt="profile">
+                            <small><strong>Bhushan Mendhe</strong> started following you!</small>
+                            <a class="read-link" href="#">Mark as Read</a>
+                            <a href="#"><i class="material-icons">close</i></a>
+                        </li>
+                        <li class="list-item">
+                            <img class="avatar avatar-sm" src="../../assets/avatar/old man.jpg" alt="profile">
+                            <small><strong>Rahul Singh</strong> started following you!</small>
+                            <a class="read-link" href="#">Mark as Read</a>
+                            <a href="#"><i class="material-icons">close</i></a>
+                        </li>
+                        <li class="list-item">
+                            <img class="avatar avatar-sm" src="../../assets/avatar/sea.jpg" alt="profile">
+                            <small><strong>Ankur Bohra</strong> started following you!</small>
+                            <a class="read-link" href="#">Mark as Read</a>
+                            <a href="#"><i class="material-icons">close</i></a>
+                        </li>
+                        <li class="list-item">
+                            <img class="avatar avatar-sm" src="../../assets/avatar/river.jpg" alt="profile">
+                            <small><strong>Nilanjana Thakur</strong> started following you!</small>
+                            <a class="read-link" href="#">Mark as Read</a>
+                            <a href="#"><i class="material-icons">close</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'stacked-list' and 'list-item' respectively as shown together to make a stacked list. --&gt;
+
+            &lt;ul class="stacked-list"&gt;
+                &lt;li class="list-item"&gt;
+                    &lt;img class="avatar avatar-sm" src="../../assets/avatar/person.jpg" alt="profile"&gt;
+                    &lt;small&gt;&lt;strong&gt;Bhushan Mendhe&lt;/strong&gt; started following you!&lt;/small&gt;
+                    &lt;a class="read-link" href="#"&gt;Mark as Read&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;i class="material-icons"&gt;close&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class="list-item"&gt;
+                    &lt;img class="avatar avatar-sm" src="../../assets/avatar/old man.jpg" alt="profile"&gt;
+                    &lt;small&gt;&lt;strong&gt;Rahul Singh&lt;/strong&gt; started following you!&lt;/small&gt;
+                    &lt;a class="read-link" href="#"&gt;Mark as Read&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;i class="material-icons"&gt;close&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class="list-item"&gt;
+                    &lt;img class="avatar avatar-sm" src="../../assets/avatar/sea.jpg" alt="profile"&gt;
+                    &lt;small&gt;&lt;strong&gt;Ankur Bohra&lt;/strong&gt; started following you!&lt;/small&gt;
+                    &lt;a class="read-link" href="#"&gt;Mark as Read&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;i class="material-icons"&gt;close&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class="list-item"&gt;
+                    &lt;img class="avatar avatar-sm" src="../../assets/avatar/river.jpg" alt="profile"&gt;
+                    &lt;small&gt;&lt;strong&gt;Nilanjana Thakur&lt;/strong&gt; started following you!&lt;/small&gt;
+                    &lt;a class="read-link" href="#"&gt;Mark as Read&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;i class="material-icons"&gt;close&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Lists/list.html"><span class="material-icons">arrow_back</span>Input</a>
+                <a class="right-nav" href="../Modal/modal.html">Modal<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
