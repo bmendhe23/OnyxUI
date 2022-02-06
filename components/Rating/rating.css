@@ -1,0 +1,37 @@
+.simple-rating {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+
+.simple-rating.primary {
+    background-color: var(--primary-style-color);
+}
+
+.simple-rating.danger {
+    background-color: var(--error-color);
+}
+
+.simple-rating.default {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.simple-rating.default .material-icons{
+    color: var(--primary-color);
+}
+
+.simple-rating .material-icons {
+    font-size: 18px;
+    margin-right: 2px;
+    color: var(--white-color);
+}
+
+/* star rating */
+
+.star-rating .material-icons.filled {
+    color: var(--gold-color);
+}

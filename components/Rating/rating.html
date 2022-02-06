@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Rating</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="rating.css">
+    <link rel="stylesheet" href="../Text Utilities/textUtilities.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
+                    <li><a href="#" class="cmp-items">Grid</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
+                    <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
+                    <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
+                    <li><a href="#" class="cmp-items">Modal</a></li>
+                    <li><a href="#" class="cmp-items">Navigation</a></li>
+                    <li><a href="rating.html" class="cmp-items active">Rating</a></li>
+                    <li><a href="#" class="cmp-items">Slider</a></li>
+                    <li><a href="#" class="cmp-items">Snackbar</a></li>
+                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilities</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Rating</h2>
+            </div>
+            <p class="component-description">Ratings are used to rate the product or a organization.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Simple Rating -->
+                
+                <h4 class="content-title">Simple Rating</h4>
+                <p class="component-description">Simple rating can be added by using class <strong>'simple-rating'</strong> followed by variant class.</p>
+
+                <div class="code-visual-container">
+                    <div class="simple-rating primary">
+                        <i class="material-icons">star</i>
+                        4.5
+                    </div>
+                    <div class="simple-rating danger">
+                        <i class="material-icons">star</i>
+                        3.0
+                    </div>
+                    <div class="simple-rating default">
+                        <i class="material-icons">star</i>
+                        3.0
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            
+            &lt;!-- Using class 'simple-rating' followed by variant class to use rating. --&gt;
+
+            &lt;div class="simple-rating primary"&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+                4.5
+            &lt;/div&gt;
+
+            &lt;div class="simple-rating danger"&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+                3.0
+            &lt;/div&gt;
+
+            &lt;div class="simple-rating default"&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+                3.0
+            &lt;/div&gt;
+
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Star Rating -->
+
+                <h4 class="content-title">Star Rating</h4>
+                <p class="component-description">Star rating can be used by using the class <strong>'star-rating'</strong> with class <strong>'filled'</strong> for stars given by user.</p>
+
+                <div class="code-visual-container">
+                    <div class="star-rating">
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons">star</i>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'star-rating' and 'filled' to use star rating. --&gt;
+
+            &lt;div class="star-rating"&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+            &lt;/div&gt;
+
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Navigation/navigation.html"><span class="material-icons">arrow_back</span>Navigation</a>
+                <a class="right-nav" href="../Slider/slider.html">Slider<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
