@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Snackbar</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="../Button/button.css">
+    <link rel="stylesheet" href="../Text Utilities/textUtilities.css">
+    <link rel="stylesheet" href="snackbar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
+                    <li><a href="#" class="cmp-items">Grid</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
+                    <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
+                    <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
+                    <li><a href="#" class="cmp-items">Modal</a></li>
+                    <li><a href="#" class="cmp-items">Navigation</a></li>
+                    <li><a href="#" class="cmp-items">Rating</a></li>
+                    <li><a href="#" class="cmp-items">Slider</a></li>
+                    <li><a href="snackbar.html" class="cmp-items active">Snackbar</a></li>
+                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Snackbar</h2>
+            </div>
+            <p class="component-description">Snackbars provide a brief message about the task that is being carrying out.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Baseline Snackbar -->
+                
+                <h4 class="content-title">Baseline Snackbar</h4>
+                <p class="component-description">Baseline snackbar displays brief message related to the running task on the bottom of the page. Baseline Snackbar can be used by using class <strong>'baseline-snackbar'</strong> in the snackbar container.</p>
+
+                <div class="code-visual-container">
+                    <button class="btn btn-outline baseline-snackbar-btn">Baseline Snackbar Demo</button>
+                    <div class="baseline-snackbar">
+                        Can't send photo. Retry in 5 seconds.
+                        <button>RETRY</button>
+                        <i class="baseline-snackbar-close material-icons">close</i>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+
+            &lt;!-- Using class 'baseline-snackbar' to use baseline snackbar. --&gt;
+
+            &lt;div class="baseline-snackbar"&gt;
+                Can't send photo. Retry in 5 seconds.
+                &lt;button&gt;RETRY&lt;/button&gt;
+                &lt;i class="snackbar-close material-icons"&gt;close&lt;/i&gt;
+            &lt;/div&gt;
+
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Top Snackbar -->
+
+                <h4 class="content-title">Top Snackbar</h4>
+                <p class="component-description">Top snackbar displays brief message related to the running task on the top of the page. Top Snackbar can be used by using class <strong>'top-snackbar'</strong> in the snackbar container.</p>
+
+                <div class="code-visual-container">
+                    <button class="btn btn-outline top-snackbar-btn">Top Snackbar Demo</button>
+                    <div class="top-snackbar">
+                        File was uploaded successfully.
+                        <i class="top-snackbar-close material-icons">close</i>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'top-snackbar' to use top snackbar. --&gt;
+
+            &lt;div class="top-snackbar"&gt;
+                File was uploaded successfully.
+                &lt;i class="top-snackbar-close material-icons"&gt;close&lt;/i&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Leading Snackbar -->
+
+                <h4 class="content-title">Leading Snackbar</h4>
+                <p class="component-description">Leading Snackbar can be used by using class <strong>'leading-snackbar'</strong> in the snackbar container.</p>
+
+                <div class="code-visual-container">
+                    <button class="btn btn-outline leading-snackbar-btn">Leading Snackbar Demo</button>
+                    <div class="leading-snackbar">
+                        Your photo has been archieved.
+                        <button>UNDO</button>
+                        <i class="leading-snackbar-close material-icons">close</i>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'leading-snackbar' to use top snackbar. --&gt;
+
+            &lt;div class="leading-snackbar"&gt;
+                Your photo has been archieved.
+                &lt;i class="leading-snackbar-close material-icons"&gt;close&lt;/i&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Slider/slider.html"><span class="material-icons">arrow_back</span>Slider</a>
+                <a class="right-nav" href="../Text Utilities/textUtilities.html">Text Utilities<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="snackbar.js"></script>
+</body>
+</html>
