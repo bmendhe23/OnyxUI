@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyx : Image</title>
+    <title>Onyx : Snackbar</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/component.css">
-    <link rel="stylesheet" href="../Avatar/avatar.css">
-    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="../Button/button.css">
+    <link rel="stylesheet" href="snackbar.css">
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
                 <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
             </section>
             <section class="nav-links">
-                <a href="../Alert/alert.html">Documentation<span class="bottom-line"></span></a>
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
             </section>
         </nav>
     </header>
@@ -45,87 +45,109 @@
                 <hr>
                 <ul>
                     <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
-                    <li><a href="/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
                     <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
                     <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
                     <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
                     <li><a href="#" class="cmp-items">Grid</a></li>
-                    <li><a href="image.html" class="cmp-items active">Image</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
                     <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
                     <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
                     <li><a href="#" class="cmp-items">Modal</a></li>
                     <li><a href="#" class="cmp-items">Navigation</a></li>
                     <li><a href="../Rating/rating.html" class="cmp-items">Rating</a></li>
                     <li><a href="#" class="cmp-items">Slider</a></li>
-                    <li><a href="../Snackbar/snackbar.html" class="cmp-items">Snackbar</a></li>
+                    <li><a href="snackbar.html" class="cmp-items active">Snackbar</a></li>
                     <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
                 </ul>
             </div>
         </aside>
         <main class="doc-container">
             <div class="doc-head">
-                <h2>Image</h2>
+                <h2>Snackbar</h2>
             </div>
-            <p class="component-description">Images give the user visual information related to any topic. They in a way also enhance the user experience as the web pages also look good having images in them.</p>
+            <p class="component-description">Snackbars provide a brief message about the task that is being carrying out.</p>
             <hr>
             <div class="doc-body">
 
-                <!-- Round Images -->
+                <!-- Baseline Snackbar -->
                 
-                <h4 class="content-title">Round Image</h4>
-                <p class="component-description">Round images can be used by using class <strong>'round-img'</strong> to the image which you want to make round.</p>
+                <h4 class="content-title">Baseline Snackbar</h4>
+                <p class="component-description">Baseline snackbar displays brief message related to the running task on the bottom of the page. Baseline Snackbar can be used by using class <strong>'baseline-snackbar'</strong> in the snackbar container.</p>
 
                 <div class="code-visual-container">
-                    <img class="round-img" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
-                    <img class="round-img" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <button class="btn btn-outline baseline-snackbar-btn">Baseline Snackbar Demo</button>
+                    <div class="baseline-snackbar">
+                        Can't send photo. Retry in 5 seconds.
+                        <button>RETRY</button>
+                        <i class="baseline-snackbar-close material-icons">close</i>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'round-img' to use the round image--&gt;
 
-            &lt;img class="round-img" src="img-url" alt="round-img-1"&gt;
-            &lt;img class="round-img" src="img-url" alt="round-img-2"&gt;
+            &lt;!-- Using class 'baseline-snackbar' to use baseline snackbar. --&gt;
+
+            &lt;div class="baseline-snackbar"&gt;
+                Can't send photo. Retry in 5 seconds.
+                &lt;button&gt;RETRY&lt;/button&gt;
+                &lt;i class="snackbar-close material-icons"&gt;close&lt;/i&gt;
+            &lt;/div&gt;
+
                         </code>
                     </pre>
                 </div>
                 <hr>
 
-                <!-- Square Image -->
+                <!-- Top Snackbar -->
 
-                <h4 class="content-title">Square Image</h4>
-                <p class="component-description">Square images can be used by using class <strong>'square-img'</strong> to the image which you want to make square.</p>
+                <h4 class="content-title">Top Snackbar</h4>
+                <p class="component-description">Top snackbar displays brief message related to the running task on the top of the page. Top Snackbar can be used by using class <strong>'top-snackbar'</strong> in the snackbar container.</p>
 
                 <div class="code-visual-container">
-                    <img class="square-img" src="/assets/avatar/sparrow.jpg" alt="square-img-1">
-                    <img class="square-img" src="/assets/avatar/person.jpg" alt="square-img-2">
+                    <button class="btn btn-outline top-snackbar-btn">Top Snackbar Demo</button>
+                    <div class="top-snackbar">
+                        File was uploaded successfully.
+                        <i class="top-snackbar-close material-icons">close</i>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'square-img' to use the square image. --&gt;
+            &lt;!-- Using class 'top-snackbar' to use top snackbar. --&gt;
 
-            &lt;img class="square-img" src="img-url" alt="square-img-1"&gt;
-            &lt;img class="square-img" src="img-url" alt="sqaure-img-2"&gt;
+            &lt;div class="top-snackbar"&gt;
+                File was uploaded successfully.
+                &lt;i class="top-snackbar-close material-icons"&gt;close&lt;/i&gt;
+            &lt;/div&gt;
                         </code>
                     </pre>
                 </div>
                 <hr>
 
-                <!-- Responsive Image -->
+                <!-- Leading Snackbar -->
 
-                <h4 class="content-title">Responsive Image</h4>
-                <p class="component-description">Images can be made responsive by using class <strong>'responsive-img'</strong> to the image which you want to make responsive.</p>
+                <h4 class="content-title">Leading Snackbar</h4>
+                <p class="component-description">Leading Snackbar can be used by using class <strong>'leading-snackbar'</strong> in the snackbar container.</p>
 
                 <div class="code-visual-container">
-                    <img class="responsive-img" src="/assets/avatar/river.jpg" alt="responsive-img">
+                    <button class="btn btn-outline leading-snackbar-btn">Leading Snackbar Demo</button>
+                    <div class="leading-snackbar">
+                        Your photo has been archieved.
+                        <button>UNDO</button>
+                        <i class="leading-snackbar-close material-icons">close</i>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'responsive-img' to make the image responsive. --&gt;
+            &lt;!-- Using class 'leading-snackbar' to use leading snackbar. --&gt;
 
-            &lt;img class="responsive-img" src="img-url" alt="responsive-img"&gt;
+            &lt;div class="leading-snackbar"&gt;
+                Your photo has been archieved.
+                &lt;i class="leading-snackbar-close material-icons"&gt;close&lt;/i&gt;
+            &lt;/div&gt;
                         </code>
                     </pre>
                 </div>
@@ -133,13 +155,14 @@
             </div>
 
             <footer>
-                <a class="left-nav" href="../Grid/grid.html"><span class="material-icons">arrow_back</span>Grid</a>
-                <a class="right-nav" href="../Input/input.html">Input<span class="material-icons">arrow_forward</span></a>
+                <a class="left-nav" href="../Slider/slider.html"><span class="material-icons">arrow_back</span>Slider</a>
+                <a class="right-nav" href="../Text Utilities/textUtilities.html">Text Utilities<span class="material-icons">arrow_forward</span></a>
             </footer>
         </main>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="snackbar.js"></script>
 </body>
 </html>

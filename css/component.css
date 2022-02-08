@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 .doc-wrapper {
     display: grid;
     color: var(--primary-color);

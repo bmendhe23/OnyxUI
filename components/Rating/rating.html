@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyx : Image</title>
+    <title>Onyx : Rating</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/component.css">
-    <link rel="stylesheet" href="../Avatar/avatar.css">
-    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="rating.css">
 </head>
 <body>
     <header>
@@ -24,7 +23,7 @@
                 <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
             </section>
             <section class="nav-links">
-                <a href="../Alert/alert.html">Documentation<span class="bottom-line"></span></a>
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
             </section>
         </nav>
     </header>
@@ -44,88 +43,104 @@
                 <h3 class="components-head"><a href="#">Components</a></h3>
                 <hr>
                 <ul>
-                    <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
-                    <li><a href="/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
                     <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
                     <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
                     <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
                     <li><a href="#" class="cmp-items">Grid</a></li>
-                    <li><a href="image.html" class="cmp-items active">Image</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
                     <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
                     <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
                     <li><a href="#" class="cmp-items">Modal</a></li>
                     <li><a href="#" class="cmp-items">Navigation</a></li>
-                    <li><a href="../Rating/rating.html" class="cmp-items">Rating</a></li>
+                    <li><a href="rating.html" class="cmp-items active">Rating</a></li>
                     <li><a href="#" class="cmp-items">Slider</a></li>
                     <li><a href="../Snackbar/snackbar.html" class="cmp-items">Snackbar</a></li>
-                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
+                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilities</a></li>
                 </ul>
             </div>
         </aside>
         <main class="doc-container">
             <div class="doc-head">
-                <h2>Image</h2>
+                <h2>Rating</h2>
             </div>
-            <p class="component-description">Images give the user visual information related to any topic. They in a way also enhance the user experience as the web pages also look good having images in them.</p>
+            <p class="component-description">Ratings are used to rate the product or a organization.</p>
             <hr>
             <div class="doc-body">
 
-                <!-- Round Images -->
+                <!-- Simple Rating -->
                 
-                <h4 class="content-title">Round Image</h4>
-                <p class="component-description">Round images can be used by using class <strong>'round-img'</strong> to the image which you want to make round.</p>
+                <h4 class="content-title">Simple Rating</h4>
+                <p class="component-description">Simple rating can be added by using class <strong>'simple-rating'</strong> followed by variant class.</p>
 
                 <div class="code-visual-container">
-                    <img class="round-img" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
-                    <img class="round-img" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <div class="simple-rating primary">
+                        <i class="material-icons">star</i>
+                        4.5
+                    </div>
+                    <div class="simple-rating danger">
+                        <i class="material-icons">star</i>
+                        3.0
+                    </div>
+                    <div class="simple-rating default">
+                        <i class="material-icons">star</i>
+                        3.0
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'round-img' to use the round image--&gt;
+            
+            &lt;!-- Using class 'simple-rating' followed by variant class to use rating. --&gt;
 
-            &lt;img class="round-img" src="img-url" alt="round-img-1"&gt;
-            &lt;img class="round-img" src="img-url" alt="round-img-2"&gt;
+            &lt;div class="simple-rating primary"&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+                4.5
+            &lt;/div&gt;
+
+            &lt;div class="simple-rating danger"&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+                3.0
+            &lt;/div&gt;
+
+            &lt;div class="simple-rating default"&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+                3.0
+            &lt;/div&gt;
+
                         </code>
                     </pre>
                 </div>
                 <hr>
 
-                <!-- Square Image -->
+                <!-- Star Rating -->
 
-                <h4 class="content-title">Square Image</h4>
-                <p class="component-description">Square images can be used by using class <strong>'square-img'</strong> to the image which you want to make square.</p>
+                <h4 class="content-title">Star Rating</h4>
+                <p class="component-description">Star rating can be used by using the class <strong>'star-rating'</strong> with class <strong>'filled'</strong> for stars given by user.</p>
 
                 <div class="code-visual-container">
-                    <img class="square-img" src="/assets/avatar/sparrow.jpg" alt="square-img-1">
-                    <img class="square-img" src="/assets/avatar/person.jpg" alt="square-img-2">
+                    <div class="star-rating">
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons filled">star</i>
+                        <i class="material-icons">star</i>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'square-img' to use the square image. --&gt;
+            &lt;!-- Using class 'star-rating' and 'filled' to use star rating. --&gt;
 
-            &lt;img class="square-img" src="img-url" alt="square-img-1"&gt;
-            &lt;img class="square-img" src="img-url" alt="sqaure-img-2"&gt;
-                        </code>
-                    </pre>
-                </div>
-                <hr>
+            &lt;div class="star-rating"&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons filled"&gt;star&lt;/i&gt;
+                &lt;i class="material-icons"&gt;star&lt;/i&gt;
+            &lt;/div&gt;
 
-                <!-- Responsive Image -->
-
-                <h4 class="content-title">Responsive Image</h4>
-                <p class="component-description">Images can be made responsive by using class <strong>'responsive-img'</strong> to the image which you want to make responsive.</p>
-
-                <div class="code-visual-container">
-                    <img class="responsive-img" src="/assets/avatar/river.jpg" alt="responsive-img">
-                </div>
-                <div class="code-example-container">
-                    <pre>
-                        <code class="language-html">
-            &lt;!-- Using class 'responsive-img' to make the image responsive. --&gt;
-
-            &lt;img class="responsive-img" src="img-url" alt="responsive-img"&gt;
                         </code>
                     </pre>
                 </div>
@@ -133,8 +148,8 @@
             </div>
 
             <footer>
-                <a class="left-nav" href="../Grid/grid.html"><span class="material-icons">arrow_back</span>Grid</a>
-                <a class="right-nav" href="../Input/input.html">Input<span class="material-icons">arrow_forward</span></a>
+                <a class="left-nav" href="../Navigation/navigation.html"><span class="material-icons">arrow_back</span>Navigation</a>
+                <a class="right-nav" href="../Slider/slider.html">Slider<span class="material-icons">arrow_forward</span></a>
             </footer>
         </main>
     </div>
