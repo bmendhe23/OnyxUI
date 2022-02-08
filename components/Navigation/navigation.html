@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Navigation</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="../Text Utilities/textUtilities.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
+                    <li><a href="#" class="cmp-items">Grid</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
+                    <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
+                    <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
+                    <li><a href="#" class="cmp-items">Modal</a></li>
+                    <li><a href="navigation.html" class="cmp-items active">Navigation</a></li>
+                    <li><a href="../Rating/rating.html" class="cmp-items">Rating</a></li>
+                    <li><a href="#" class="cmp-items">Slider</a></li>
+                    <li><a href="../Snackbar/snackbar.html" class="cmp-items">Snackbar</a></li>
+                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Navigation</h2>
+            </div>
+            <p class="component-description">Navigation components are a crucial part of a web app that let you navigate to various parts of the web app.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Simple Navigation -->
+                
+                <h4 class="content-title">Simple Navigation</h4>
+                <p class="component-description">Simple navigation can be used by using class <strong>'navbar'</strong> in the navigation container.</p>
+
+                <div class="code-visual-container">
+                    <nav class="navbar">
+                        <section class="brand">
+                            <a href="#">
+                                <img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo">
+                            </a>
+                            <span class="brand-name"><a href="#">Onyx UI</a></span>
+                        </section>
+                        <section class="nav-links">
+                            <a href="#">Home</a>
+                            <a href="#">About us</a>
+                            <a href="#">Contact us</a>
+                        </section>
+                    </nav>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+            &lt;!-- Using class 'navbar' to use navigation. --&gt;
+
+            &lt;nav class="navbar"&gt;
+                &lt;section class="brand"&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img src="logo.png" alt="OnyxUI" class="brand-logo"&gt;
+                    &lt;/a&gt;
+                    &lt;span class="brand-name"&gt;&lt;a href="#"&gt;Onyx UI&lt;/a&gt;&lt;/span&gt;
+                &lt;/section&gt;
+
+                &lt;section class="nav-links"&gt;
+                    &lt;a href="#"&gt;Home&lt;/a&gt;
+                    &lt;a href="#"&gt;About us&lt;/a&gt;
+                    &lt;a href="#"&gt;Contact us&lt;/a&gt;
+                &lt;/section&gt;
+            &lt;/nav&gt;
+
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Modal/modal.html"><span class="material-icons">arrow_back</span>Modal</a>
+                <a class="right-nav" href="../Rating/rating.html">Rating<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
