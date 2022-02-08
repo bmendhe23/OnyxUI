@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx : Text Utilites</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css" integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="brand">
+                <a href="/index.html"><img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo"></a>
+                <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
+            </section>
+            <section class="nav-links">
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
+            </section>
+        </nav>
+    </header>
+    <div class="doc-wrapper">
+        <aside class="sidebar">
+            <div class="get-started-container">
+                <h3 class="get-started"><a href="#">Get Started</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="#" class="get-started-items">Introduction</a></li>
+                    <li><a href="#" class="get-started-items">Colors</a></li>
+                    <li><a href="#" class="get-started-items">Typography</a></li>
+                    <li><a href="#" class="get-started-items">Conclusion</a></li>
+                </ul>
+            </div>
+            <div class="components-container">
+                <h3 class="components-head"><a href="#">Components</a></h3>
+                <hr>
+                <ul>
+                    <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
+                    <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
+                    <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
+                    <li><a href="grid.html" class="cmp-items active">Grid</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
+                    <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
+                    <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
+                    <li><a href="../Modal/modal.html" class="cmp-items">Modal</a></li>
+                    <li><a href="../Navigation/navigation.html" class="cmp-items">Navigation</a></li>
+                    <li><a href="../Rating/rating.html" class="cmp-items">Rating</a></li>
+                    <li><a href="#" class="cmp-items">Slider</a></li>
+                    <li><a href="../Snackbar/snackbar.html" class="cmp-items">Snackbar</a></li>
+                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="doc-container">
+            <div class="doc-head">
+                <h2>Grid</h2>
+            </div>
+            <p class="component-description">Grid provides the user with a system to layout elements efficiently on the screen in a orderly fashion.</p>
+            <hr>
+            <div class="doc-body">
+
+                <!-- Two column Grid -->
+                
+                <h4 class="content-title">Two-Column Grid</h4>
+                <p class="component-description">Two-column grid can be used by using <strong>'two-items'</strong> in the grid container.</p>
+
+                <div class="code-visual-container">
+                    <div class="two-items">
+                        <div class="grid-items item-1">Item 1</div>
+                        <div class="grid-items item-2">Item 2</div>
+                        <div class="grid-items item-3">Item 3</div>
+                        <div class="grid-items item-4">Item 4</div>
+                        <div class="grid-items item-5">Item 5</div>
+                        <div class="grid-items item-6">Item 6</div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+
+            &lt;!-- Using class 'two-items' to use two-column grid. --&gt;
+
+            &lt;div class="two-items"&gt;
+                &lt;div class="grid-items item-1"&gt;Item 1&lt;/div&gt;
+                &lt;div class="grid-items item-2"&gt;Item 2&lt;/div&gt;
+                &lt;div class="grid-items item-3"&gt;Item 3&lt;/div&gt;
+                &lt;div class="grid-items item-4"&gt;Item 4&lt;/div&gt;
+                &lt;div class="grid-items item-5"&gt;Item 5&lt;/div&gt;
+                &lt;div class="grid-items item-6"&gt;Item 6&lt;/div&gt;
+            &lt;/div&gt;
+
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+
+                <!-- Three-Column Grid -->
+
+                <h4 class="content-title">Three-Column Grid</h4>
+                <p class="component-description">Three-column grid can be used by using <strong>'three-items'</strong> in the grid container.</p>
+
+                <div class="code-visual-container">
+                    <div class="three-items">
+                        <div class="grid-items item-1">Item 1</div>
+                        <div class="grid-items item-2">Item 2</div>
+                        <div class="grid-items item-3">Item 3</div>
+                        <div class="grid-items item-4">Item 4</div>
+                        <div class="grid-items item-5">Item 5</div>
+                        <div class="grid-items item-6">Item 6</div>
+                    </div>
+                </div>
+                <div class="code-example-container">
+                    <pre>
+                        <code class="language-html">
+
+            &lt;!-- Using class 'three-items' to use three-column grid. --&gt;
+
+            &lt;div class="three-items"&gt;
+                &lt;div class="grid-items item-1"&gt;Item 1&lt;/div&gt;
+                &lt;div class="grid-items item-2"&gt;Item 2&lt;/div&gt;
+                &lt;div class="grid-items item-3"&gt;Item 3&lt;/div&gt;
+                &lt;div class="grid-items item-4"&gt;Item 4&lt;/div&gt;
+                &lt;div class="grid-items item-5"&gt;Item 5&lt;/div&gt;
+                &lt;div class="grid-items item-6"&gt;Item 6&lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+            </div>
+
+            <footer>
+                <a class="left-nav" href="../Card/card.html"><span class="material-icons">arrow_back</span>Card</a>
+                <a class="right-nav" href="../Image/image.html">Image<span class="material-icons">arrow_forward</span></a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
