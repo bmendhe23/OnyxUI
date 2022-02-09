@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyx : Text Utilites</title>
+    <title>Onyx : Navigation</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/component.css">
-    <link rel="stylesheet" href="textUtilities.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="../Text Utilities/textUtilities.css">
 </head>
 <body>
     <header>
@@ -53,73 +54,62 @@
                     <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
                     <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
                     <li><a href="#" class="cmp-items">Modal</a></li>
-                    <li><a href="../Navigation/navigation.html" class="cmp-items">Navigation</a></li>
+                    <li><a href="navigation.html" class="cmp-items active">Navigation</a></li>
                     <li><a href="../Rating/rating.html" class="cmp-items">Rating</a></li>
                     <li><a href="#" class="cmp-items">Slider</a></li>
                     <li><a href="../Snackbar/snackbar.html" class="cmp-items">Snackbar</a></li>
-                    <li><a href="textUtilities.html" class="cmp-items active">Text Utilites</a></li>
+                    <li><a href="../Text Utilities/textUtilities.html" class="cmp-items">Text Utilites</a></li>
                 </ul>
             </div>
         </aside>
         <main class="doc-container">
             <div class="doc-head">
-                <h2>Text Utilites</h2>
+                <h2>Navigation</h2>
             </div>
-            <p class="component-description">Text Utilites defines the options available for the text elements on your webpage.</p>
+            <p class="component-description">Navigation components are a crucial part of a web app that let you navigate to various parts of the web app.</p>
             <hr>
             <div class="doc-body">
 
-                <!-- Headings -->
+                <!-- Simple Navigation -->
                 
-                <h4 class="content-title">Heading</h4>
-                <p class="component-description">Heading starting from h1 to h6.</p>
+                <h4 class="content-title">Simple Navigation</h4>
+                <p class="component-description">Simple navigation can be used by using class <strong>'navbar'</strong> in the navigation container.</p>
 
                 <div class="code-visual-container">
-                    <div class="heading-container">
-                        <h1>This is a h1 heading.</h1>
-                        <h2>This is a h2 heading.</h2>
-                        <h3>This is a h3 heading.</h3>
-                        <h4>This is a h4 heading.</h4>
-                        <h5>This is a h5 heading.</h5>
-                        <h6>This is a h6 heading.</h6>
-                    </div>
+                    <nav class="navbar">
+                        <section class="brand">
+                            <a href="#">
+                                <img src="../../assets/logo.png" alt="OnyxUI" class="brand-logo">
+                            </a>
+                            <span class="brand-name"><a href="#">Onyx UI</a></span>
+                        </section>
+                        <section class="nav-links">
+                            <a href="#">Home</a>
+                            <a href="#">About us</a>
+                            <a href="#">Contact us</a>
+                        </section>
+                    </nav>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
+            &lt;!-- Using class 'navbar' to use navigation. --&gt;
 
-            &lt;h1&gt;This is a h1 heading.&lt;/h1&gt;
-            &lt;h2&gt;This is a h2 heading.&lt;/h2&gt;
-            &lt;h3&gt;This is a h3 heading.&lt;/h3&gt;
-            &lt;h4&gt;This is a h4 heading.&lt;/h4&gt;
-            &lt;h5&gt;This is a h5 heading.&lt;/h5&gt;
-            &lt;h6&gt;This is a h6 heading.&lt;/h6&gt;
+            &lt;nav class="navbar"&gt;
+                &lt;section class="brand"&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img src="logo.png" alt="OnyxUI" class="brand-logo"&gt;
+                    &lt;/a&gt;
+                    &lt;span class="brand-name"&gt;&lt;a href="#"&gt;Onyx UI&lt;/a&gt;&lt;/span&gt;
+                &lt;/section&gt;
 
-                        </code>
-                    </pre>
-                </div>
-                <hr>
+                &lt;section class="nav-links"&gt;
+                    &lt;a href="#"&gt;Home&lt;/a&gt;
+                    &lt;a href="#"&gt;About us&lt;/a&gt;
+                    &lt;a href="#"&gt;Contact us&lt;/a&gt;
+                &lt;/section&gt;
+            &lt;/nav&gt;
 
-                <!-- Small Text, Gray Text and Centered Text -->
-
-                <h4 class="content-title">Small, Gray and Centered Text</h4>
-                <p class="component-description">Small, Gray, and Center text can be used by adding element inside <strong>small</strong>, class <strong>'gray-text'</strong>, class <strong>centered-text</strong> respectively.</p>
-
-                <div class="code-visual-container">
-                    <div class="text-container">
-                        <small>This is a small text.</small>
-                        <p class="gray-text">This is a gray text.</p>
-                        <p class="centered-text">This is a centered Text</p>
-                    </div>
-                </div>
-                <div class="code-example-container">
-                    <pre>
-                        <code class="language-html">
-            &lt;!-- Using class 'gray-text' and 'centered-text' to use gray and centered text. --&gt;
-
-            &lt;small&gt;This is a small text.&lt;/small&gt;
-            &lt;p class="gray-text"&gt;This is a gray text.&lt;/p&gt;
-            &lt;p class="centered-text"&gt;This is a centered Text&lt;/p&gt;
                         </code>
                     </pre>
                 </div>
@@ -127,8 +117,8 @@
             </div>
 
             <footer>
-                <a class="left-nav" href="../Snackbar/snackbar.html"><span class="material-icons">arrow_back</span>Snackbar</a>
-                <!-- <a class="right-nav" href="#">Toast<span class="material-icons">arrow_forward</span></a> -->
+                <a class="left-nav" href="../Modal/modal.html"><span class="material-icons">arrow_back</span>Modal</a>
+                <a class="right-nav" href="../Rating/rating.html">Rating<span class="material-icons">arrow_forward</span></a>
             </footer>
         </main>
     </div>
