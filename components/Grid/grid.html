@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyx : Image</title>
+    <title>Onyx : Text Utilites</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/component.css">
-    <link rel="stylesheet" href="../Avatar/avatar.css">
-    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
     <header>
@@ -24,7 +23,7 @@
                 <span class="brand-name"><a href="/index.html">Onyx UI</a></span>
             </section>
             <section class="nav-links">
-                <a href="../Alert/alert.html">Documentation<span class="bottom-line"></span></a>
+                <a href="alert.html">Documentation<span class="bottom-line"></span></a>
             </section>
         </nav>
     </header>
@@ -45,12 +44,12 @@
                 <hr>
                 <ul>
                     <li><a href="../Alert/alert.html" class="cmp-items">Alert</a></li>
-                    <li><a href="/avatar.html" class="cmp-items">Avatar</a></li>
+                    <li><a href="../Avatar/avatar.html" class="cmp-items">Avatar</a></li>
                     <li><a href="../Badge/badge.html" class="cmp-items">Badge</a></li>
                     <li><a href="../Button/button.html" class="cmp-items">Button</a></li>
                     <li><a href="../Card/card.html" class="cmp-items">Card</a></li>
-                    <li><a href="../Grid/grid.html" class="cmp-items">Grid</a></li>
-                    <li><a href="image.html" class="cmp-items active">Image</a></li>
+                    <li><a href="grid.html" class="cmp-items active">Grid</a></li>
+                    <li><a href="../Image/image.html" class="cmp-items">Image</a></li>
                     <li><a href="../Input/input.html" class="cmp-items">Input</a></li>
                     <li><a href="../Lists/list.html" class="cmp-items">Lists</a></li>
                     <li><a href="../Modal/modal.html" class="cmp-items">Modal</a></li>
@@ -64,68 +63,76 @@
         </aside>
         <main class="doc-container">
             <div class="doc-head">
-                <h2>Image</h2>
+                <h2>Grid</h2>
             </div>
-            <p class="component-description">Images give the user visual information related to any topic. They in a way also enhance the user experience as the web pages also look good having images in them.</p>
+            <p class="component-description">Grid provides the user with a system to layout elements efficiently on the screen in a orderly fashion.</p>
             <hr>
             <div class="doc-body">
 
-                <!-- Round Images -->
+                <!-- Two column Grid -->
                 
-                <h4 class="content-title">Round Image</h4>
-                <p class="component-description">Round images can be used by using class <strong>'round-img'</strong> to the image which you want to make round.</p>
+                <h4 class="content-title">Two-Column Grid</h4>
+                <p class="component-description">Two-column grid can be used by using <strong>'two-items'</strong> in the grid container.</p>
 
                 <div class="code-visual-container">
-                    <img class="round-img" src="/assets/avatar/sparrow.jpg" alt="avatar-1">
-                    <img class="round-img" src="/assets/avatar/person.jpg" alt="avatar-2">
+                    <div class="two-items">
+                        <div class="grid-items item-1">Item 1</div>
+                        <div class="grid-items item-2">Item 2</div>
+                        <div class="grid-items item-3">Item 3</div>
+                        <div class="grid-items item-4">Item 4</div>
+                        <div class="grid-items item-5">Item 5</div>
+                        <div class="grid-items item-6">Item 6</div>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'round-img' to use the round image--&gt;
 
-            &lt;img class="round-img" src="img-url" alt="round-img-1"&gt;
-            &lt;img class="round-img" src="img-url" alt="round-img-2"&gt;
+            &lt;!-- Using class 'two-items' to use two-column grid. --&gt;
+
+            &lt;div class="two-items"&gt;
+                &lt;div class="grid-items item-1"&gt;Item 1&lt;/div&gt;
+                &lt;div class="grid-items item-2"&gt;Item 2&lt;/div&gt;
+                &lt;div class="grid-items item-3"&gt;Item 3&lt;/div&gt;
+                &lt;div class="grid-items item-4"&gt;Item 4&lt;/div&gt;
+                &lt;div class="grid-items item-5"&gt;Item 5&lt;/div&gt;
+                &lt;div class="grid-items item-6"&gt;Item 6&lt;/div&gt;
+            &lt;/div&gt;
+
                         </code>
                     </pre>
                 </div>
                 <hr>
 
-                <!-- Square Image -->
+                <!-- Three-Column Grid -->
 
-                <h4 class="content-title">Square Image</h4>
-                <p class="component-description">Square images can be used by using class <strong>'square-img'</strong> to the image which you want to make square.</p>
+                <h4 class="content-title">Three-Column Grid</h4>
+                <p class="component-description">Three-column grid can be used by using <strong>'three-items'</strong> in the grid container.</p>
 
                 <div class="code-visual-container">
-                    <img class="square-img" src="/assets/avatar/sparrow.jpg" alt="square-img-1">
-                    <img class="square-img" src="/assets/avatar/person.jpg" alt="square-img-2">
+                    <div class="three-items">
+                        <div class="grid-items item-1">Item 1</div>
+                        <div class="grid-items item-2">Item 2</div>
+                        <div class="grid-items item-3">Item 3</div>
+                        <div class="grid-items item-4">Item 4</div>
+                        <div class="grid-items item-5">Item 5</div>
+                        <div class="grid-items item-6">Item 6</div>
+                    </div>
                 </div>
                 <div class="code-example-container">
                     <pre>
                         <code class="language-html">
-            &lt;!-- Using class 'square-img' to use the square image. --&gt;
 
-            &lt;img class="square-img" src="img-url" alt="square-img-1"&gt;
-            &lt;img class="square-img" src="img-url" alt="sqaure-img-2"&gt;
-                        </code>
-                    </pre>
-                </div>
-                <hr>
+            &lt;!-- Using class 'three-items' to use three-column grid. --&gt;
 
-                <!-- Responsive Image -->
-
-                <h4 class="content-title">Responsive Image</h4>
-                <p class="component-description">Images can be made responsive by using class <strong>'responsive-img'</strong> to the image which you want to make responsive.</p>
-
-                <div class="code-visual-container">
-                    <img class="responsive-img" src="/assets/avatar/river.jpg" alt="responsive-img">
-                </div>
-                <div class="code-example-container">
-                    <pre>
-                        <code class="language-html">
-            &lt;!-- Using class 'responsive-img' to make the image responsive. --&gt;
-
-            &lt;img class="responsive-img" src="img-url" alt="responsive-img"&gt;
+            &lt;div class="three-items"&gt;
+                &lt;div class="grid-items item-1"&gt;Item 1&lt;/div&gt;
+                &lt;div class="grid-items item-2"&gt;Item 2&lt;/div&gt;
+                &lt;div class="grid-items item-3"&gt;Item 3&lt;/div&gt;
+                &lt;div class="grid-items item-4"&gt;Item 4&lt;/div&gt;
+                &lt;div class="grid-items item-5"&gt;Item 5&lt;/div&gt;
+                &lt;div class="grid-items item-6"&gt;Item 6&lt;/div&gt;
+            &lt;/div&gt;
                         </code>
                     </pre>
                 </div>
@@ -133,8 +140,8 @@
             </div>
 
             <footer>
-                <a class="left-nav" href="../Grid/grid.html"><span class="material-icons">arrow_back</span>Grid</a>
-                <a class="right-nav" href="../Input/input.html">Input<span class="material-icons">arrow_forward</span></a>
+                <a class="left-nav" href="../Card/card.html"><span class="material-icons">arrow_back</span>Card</a>
+                <a class="right-nav" href="../Image/image.html">Image<span class="material-icons">arrow_forward</span></a>
             </footer>
         </main>
     </div>

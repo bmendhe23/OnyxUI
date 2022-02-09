@@ -1,0 +1,44 @@
+.two-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.three-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+}
+
+.item-1 {
+    background-color: var(--grid-item-1);
+}
+
+.item-2 {
+    background-color: var(--grid-item-2);
+}
+
+.item-3 {
+    background-color: var(--grid-item-3);
+}
+
+.item-4 {
+    background-color: var(--grid-item-4);
+}
+
+.item-5 {
+    background-color: var(--grid-item-5);
+}
+
+.item-6 {
+    background-color: var(--grid-item-6);
+}

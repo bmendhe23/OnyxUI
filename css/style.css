@@ -32,4 +32,10 @@
     --gold-color: gold;
     --highlight-color: rgb(220,174,150);
     --black-light: rgb(77, 77, 77);
+    --grid-item-1: #FD0100;
+    --grid-item-2: #F76915;
+    --grid-item-3: #EEDE04;
+    --grid-item-4: #A0D636;
+    --grid-item-5: #2FA236;
+    --grid-item-6: #878de4;
 }
