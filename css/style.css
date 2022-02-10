@@ -13,7 +13,7 @@
 @import url('../components/Navigation/navigation.css');
 @import url('../components/Rating/rating.css');
 @import url('../components/Snackbar/snackbar.css');
-@import url('../components/Text\ Utilities/textUtilities.css');
+/* @import url('../components/Text\ Utilities/textUtilities.css'); */
 
 /* reset css */
 * {
