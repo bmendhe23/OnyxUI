@@ -40,7 +40,7 @@
     --grid-item-6: #878de4;
 }
 
-@import url(navbar.css);
+@import url(./navbar.css);
 @import url(../components/Alert/alert.css);
 @import url(../components/Avatar/avatar.css);
 @import url(../components/Badge/badge.css);
