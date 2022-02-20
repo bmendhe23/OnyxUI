@@ -2,13 +2,13 @@
 
 ### Onyx UI is a ready to use component library that can be used to speed up your project development, and it is also easily customisable.
 
-#Installation
+# Installation
 
 ```css
 <link rel="stylesheet" href="https://onyx-ui.netlify.app/css/style.css">
 ```
 
-##Onyx UI Components
+## Onyx UI Components
 
 - [Alert](#alert)
 - [Avatar](#avatar)
