@@ -45,7 +45,7 @@ Avatars are graphical representation of the user's profile picture usually round
 - Square Avatar
 - Initials Avatar
 
-##[Badge](https://onyx-ui.netlify.app/components/badge/badge)
+## [Badge](https://onyx-ui.netlify.app/components/badge/badge)
 
 Badges are additional components added to another component that show information related to the component they are added to. They can be added to show status, count, etc.
 
